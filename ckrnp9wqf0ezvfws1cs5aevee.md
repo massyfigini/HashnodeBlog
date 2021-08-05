@@ -37,7 +37,7 @@ NB: use quotes if there are spaces in files or directories names
 cp original.txt duplicate.txt backup     #copy the 2 files in the backup directory
 
 #mv: move or rename files or directories
-#move the 2 files from backup to the parent directory
+#move the files from backup to the parent directory
 mv backup/original.txt backup/duplicate.txt ..    
  
 mv original.txt old.txt     #rename original.txt in old.txt

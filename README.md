@@ -1,2 +1,2 @@
 All my notes in md format.  
-You can find them also on https://massyfigini.hashnode.dev/
+You can find a more readable version on https://massyfigini.hashnode.dev/

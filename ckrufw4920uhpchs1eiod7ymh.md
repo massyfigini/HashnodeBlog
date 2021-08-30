@@ -1,7 +1,7 @@
 ## Data Science Specialization Capstone Project: Milestone Report
 
 This is my Milestone Report for the [Data Science Capstone Project](https://www.coursera.org/learn/data-science-project?specialization=jhu-data-science), last step of the [Data Science Specialization by Johns Hopkins University on Coursera](https://www.coursera.org/specializations/jhu-data-science).  
-You can see the [Md, Rmd and html format here](https://github.com/massyfigini/NextWordApp_CapstoneProject), the compiled [html result here](https://massyfigini.github.io/Milestone_Report.html).  
+You can see the [Md, Rmd and html format here](https://github.com/massyfigini/NextWordApp_CapstoneProject), the compiled [html result here](https://massyfigini.github.io/assets/Milestone_Report.html).  
 The goal of the Capstone Project was to implement a useful model for predict a word given one or more words and to develop a web app to use it. In the Milestone Report I have to clean the data and prepare them for the job.  
 
 ------------------------------------------------------------------------------------

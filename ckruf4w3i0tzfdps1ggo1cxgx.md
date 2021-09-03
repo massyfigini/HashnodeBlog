@@ -5,8 +5,6 @@ You can see the [Md, Rmd and html format here](https://github.com/massyfigini/Ma
 
 ------------------------------------------------------------------------------------------------
 
-# Machine Learning Course Project
-
 ### Course Project Instruction
 
 Using devices such as Jawbone Up, Nike FuelBand, and Fitbit it is now possible to collect a large amount of data about personal activity relatively inexpensively.  

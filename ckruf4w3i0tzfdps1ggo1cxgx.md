@@ -5,7 +5,7 @@ You can see the [Md, Rmd and html format here](https://github.com/massyfigini/Ma
 
 ------------------------------------------------------------------------------------------------
 
-### Course Project Instruction
+### Course Project Instructions
 
 Using devices such as Jawbone Up, Nike FuelBand, and Fitbit it is now possible to collect a large amount of data about personal activity relatively inexpensively.  
 Six young health participants were asked to perform one set of 10 repetitions of the Unilateral Dumbbell Biceps Curl in five different fashions: exactly according to the specification (Class A), throwing the elbows to the front (Class B), lifting the dumbbell only halfway (Class C), lowering the dumbbell only halfway (Class D) and throwing the hips to the front (Class E).  

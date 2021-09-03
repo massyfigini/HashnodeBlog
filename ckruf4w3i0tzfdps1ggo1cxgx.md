@@ -6,10 +6,6 @@ You can see the [Md, Rmd and html format here](https://github.com/massyfigini/Ma
 ------------------------------------------------------------------------------------------------
 
 # Machine Learning Course Project
-Massimiliano Figini  
-17/02/2016  
-
-
 
 ### Course Project Instruction
 

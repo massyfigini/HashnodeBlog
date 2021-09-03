@@ -1,7 +1,7 @@
 ## Coursera Data Science Specialization: Practical Machine Learning Course Project
 
 This is my [Practical Machine Learning course](https://www.coursera.org/learn/practical-machine-learning) project, part of the [Johns Hopkins Data Science Specialization on Coursera](https://www.coursera.org/specializations/jhu-data-science).  
-You can see the [Md, Rmd and html format here](https://github.com/massyfigini/MachineLearningCP), the compiled [html result here](https://massyfigini.github.io/Machine_Learning_Course_Project.html).  
+You can see the [Md, Rmd and html format here](https://github.com/massyfigini/MachineLearningCP), the compiled [html result here](https://massyfigini.github.io/assets/Machine_Learning_Course_Project.html).  
 
 ------------------------------------------------------------------------------------------------
 

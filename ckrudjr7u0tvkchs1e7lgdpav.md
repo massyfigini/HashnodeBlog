@@ -1,14 +1,9 @@
 ## Coursera Data Science Specialization: Regression Models Course Project
 
 This is my Regression Models course project, part of the Johns Hopkins Data Science Specialization on Coursera.  
-You can find the [Rmd and html format here](https://github.com/massyfigini/RegressionModelsCP), the compiled [html result here](https://massyfigini.github.io/Regression_Models_Course_Project.html).  
+You can find the [Rmd and html format here](https://github.com/massyfigini/RegressionModelsCP), the compiled [html result here](https://massyfigini.github.io/assets/Regression_Models_Course_Project.html).  
 
 ----------------------------------------------------------------------------------------------
-
-# Regression Models Course Project
-Massimiliano Figini  
-January 13, 2017  
-
 
 # Miles Per Gallon: Automatic vs Manual Transmission
 

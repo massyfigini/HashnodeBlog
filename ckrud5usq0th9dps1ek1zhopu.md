@@ -1,7 +1,7 @@
 ## Coursera Data Science Specialization: Statistical Inference Course Project part 2
 
 Part 2 of my  [Statistical Inference](https://www.coursera.org/learn/statistical-inference) project ([part 1 is here](https://massyfigini.hashnode.dev/coursera-data-science-specialization-statistical-inference-course-project-part-1)), part of the [Johns Hopkins Data Science Specialization on Coursera](https://www.coursera.org/specializations/jhu-data-science).  
-You can find the [.Rmd (R Markdown) format here](https://github.com/massyfigini/StatisticalInferenceCP/blob/master/Statistical_Inference_CP2.Rmd), and the [html result here](https://notes.massimilianofigini.com/2016/10/r-statistical-inference-course-project.html).  
+You can find the [.Rmd (R Markdown) format here](https://github.com/massyfigini/StatisticalInferenceCP/blob/master/Statistical_Inference_CP2.Rmd), and the [html result here](http://massyfigini.github.io/assets/Statistical_Inference_CP2.html).  
 
 ---------------------------------------------------------------------------------------------
 

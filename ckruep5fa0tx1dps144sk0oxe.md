@@ -1,7 +1,7 @@
 ## Coursera Data Science Specialization: Reproducible Research Course Project 2
 
 My Course Project 2 of the [Reproducible Research course](https://www.coursera.org/learn/reproducible-research), part of the [Data Science Specialization by JHU on Coursera](https://www.coursera.org/specializations/jhu-data-science).  
-You can find the [html results here](https://massyfigini.github.io/assets/Course_Project_2.html), the [R Markdown format here](https://github.com/massyfigini/ReproducibleResearch_CP2/blob/master/Course_Project_2.Rmd) and the final [RPubs publication here](https://rpubs.com/massyfigini/ReproducibleResearch_CP2).  
+You can find the [html results here](https://massyfigini.github.io/assets/RR_Course_Project_2.html), the [R Markdown format here](https://github.com/massyfigini/ReproducibleResearch_CP2/blob/master/Course_Project_2.Rmd) and the final [RPubs publication here](https://rpubs.com/massyfigini/ReproducibleResearch_CP2).  
 
 ----------------------------------------------------------------------------------
 

@@ -1,7 +1,7 @@
 ## Coursera Data Science Specialization: Reproducible Research Course Project 1
 
 My Course Project 1 of the [Reproducible Research course](https://www.coursera.org/learn/reproducible-research), part of the [Data Science Specialization by JHU on Coursera](https://www.coursera.org/specializations/jhu-data-science).  
-You can find the [html result here](https://massyfigini.github.io/PA1_template.html), the [R Markdown format here](https://github.com/massyfigini/RepData_PeerAssessment1/blob/master/PA1_template.Rmd).  
+You can find the [html result here](https://massyfigini.github.io/assets/PA1_template.html), the [R Markdown format here](https://github.com/massyfigini/RepData_PeerAssessment1/blob/master/PA1_template.Rmd).  
 
 ----------------------------------------------------------------------------------------------------
 

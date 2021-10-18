@@ -109,11 +109,31 @@ In PySpark, joins are performed using the DataFrame method .join(). This method 
 dfjoin = df1.join(df2, on="col1", how="leftouter")
 ``` 
 
-The .cast() method is to convert data types.  
+The .cast() method is useful to convert data types.  
 
 ```
 df = df.withColumn("col", df.col.cast("integer"))
 ``` 
+
+To deploy your PySpark application, you can collecting all dependencies in one archive:
+
+```
+zip --recurse-paths zip_file.zip pipeline_folder
+``` 
+
+Then, with the dependencies of a job ready to be distributed across a cluster’s nodes, you can submit a job to a cluster:
+
+```
+spark-submit --py-files PY_FILES MAIN_PYTHON_FILE
+``` 
+with PY_FILES being either a zipped archive (like pur zip_file.zip created before), a Python egg or separate Python files that will be placed on the PYTHONPATH environment variable of your cluster's nodes. The MAIN_PYTHON_FILE should be the entry point of your application. Ex:
+
+```
+spark-submit --py-files spark_pipelines/zip_file.zip spark_pipelines/cleaning/clean_ratings.py
+``` 
+
+
+
 
 
 

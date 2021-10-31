@@ -1,4 +1,4 @@
-## AWS and Boto3 in Python
+## AWS in Python with Boto3
 
 To interact with AWS in Python, we use the Boto3 library.  
 

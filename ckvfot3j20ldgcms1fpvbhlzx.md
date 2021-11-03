@@ -1,6 +1,6 @@
 ## AWS in Python with Boto3
 
-To interact with AWS in Python, we use the Boto3 library.  
+To interact with AWS in Python, there is the Boto3 library.  
 
 ### 1. AWS S3  
 

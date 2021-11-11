@@ -131,6 +131,31 @@ with PY_FILES being either a zipped archive (like pur zip_file.zip created befor
 ```
 spark-submit --py-files spark_pipelines/zip_file.zip spark_pipelines/cleaning/clean_ratings.py
 ``` 
+Caching is keeping data in memory, so we don't need to recalculate each time it is used.
+
+```
+# cache a dataframe
+df.cache()
+
+# uncache a dataframe
+df.unpersist()
+
+# determine if a dataframe is cached
+df.is_cached
+
+# cache a table
+spark.catalog.cacheTable('df')
+
+# uncache a table
+spark.catalog.uncacheTable('df')
+
+# determine if a table is cached
+spark.catalog.isCached(tableName = 'df')
+
+# remove all cached table
+spark.catalog.clearCache()
+``` 
+
 
 
 

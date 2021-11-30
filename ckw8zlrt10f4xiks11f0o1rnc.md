@@ -55,8 +55,8 @@ from pyspark.sql.functions import udf
 from pyspark.sql.types import BooleanType
 
 udf_short = udf(lambda x:
-                                            True if not x or len(x) < 5 else False,
-                                            BooleanType())
+                     True if not x or len(x) < 5 else False,
+                     BooleanType())
 
 
 # we use the udf just as we would a built-in function

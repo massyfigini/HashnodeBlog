@@ -1,8 +1,8 @@
 ## Send an email with Azure Data Factory through Azure Logic App
 
-If you have worked with SQL Server Integration Service and now you are starting work with his nephew Azure Data Factory, it can be strange that you can't find a "Send Email Task" you surely have used for send email when, for example, the task has succeded or failed.
+If you have worked with SQL Server Integration Service and now you are starting work with his nephew Azure Data Factory, it can be strange that you can't find a "Send Email Task" you surely have used to send emails when, for example, the task has succeded or failed.
 
-But it's really easy to configure a Logic App that send an email, and then integrate it in your ADF pipeline.
+But it's really easy to configure a Logic App to send an email, and then integrate it in your ADF pipeline.
 
 In this demo I assume you have already configured an Azure Data Factory and you want only to add a send email task to your pipeline at the end of it.
 <br><br>

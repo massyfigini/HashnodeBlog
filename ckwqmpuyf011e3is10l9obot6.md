@@ -1,17 +1,13 @@
 ## Send an email with Azure Data Factory through Azure Logic App
 
-If you have worked with SQL Server Integration Service and now you are starting work with his nephew Azure Data Factory, it can be strange that you can't find a "Send Email Task" you surely have used to send emails when, for example, the task has succeded or failed.
-
-But it's really easy to configure a Logic App to send an email, and then integrate it in your ADF pipeline.
-
-In this demo I assume you have already configured an Azure Data Factory and you want only to add a send email task to your pipeline at the end of it.
+In this demo I assume you have already configured a pipeline in Azure Data Factory and you want only to send an email at the end of it.
 <br><br>
 
-### 1. The Logic App
+### 1. Create a Logic App
 
 Create a Logic App (Consumption Type)
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1638457786108/uyolvkIID.png)
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1638986158259/FkJe-BImo.png)
 
 Once the deployment is complete, go to the Logic App and choose the "When a HTTP request is received" trigger.
 
@@ -55,7 +51,7 @@ We now add To, Subject and Body, and use the "Add Dynamic Content" link to add t
 Then, we can save the Logic App and Open our Data Factory pipeline.
 <br><br><br>
 
-### 2. Azure Data Factory
+### 2. Add to Azure Data Factory
 
 In your pipeline, add a Web activity 
 
@@ -80,17 +76,4 @@ You can use HTML tags in the body.
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1638462677347/iCUirEFoY.png)
 
 Choose ok.
-Now we can publish the pipeline and trigger it. The email will be sended at the end of the pipeline steps!
-
-
-
-
-
-
-
-
-
-
-
-
-
+Now we can publish the pipeline and trigger it. The email will be sended at the end of the pipeline steps.

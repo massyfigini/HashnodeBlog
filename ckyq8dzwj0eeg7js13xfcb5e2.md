@@ -77,7 +77,7 @@ WHERE JSON_VALUE(Post_Json, '$.Post.Id') = '61'
 ```
 
 
-### 5. T-SQL JSON Function Summary in SQL Server
+### 5. JSON Function Summary in SQL Server
 
 Recap:
 - ISJSON(): see if a string contains a valid JSON

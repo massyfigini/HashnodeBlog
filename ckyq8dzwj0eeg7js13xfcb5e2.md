@@ -1,9 +1,9 @@
-## JSON in SQL Server and Azure SQL Database
+## JSON documents in SQL Server and Azure SQL Database
 
 These contents working in SQL Server 2016 and later and Azure SQL Database.  
 
 
-### 1. JSON document in SQL Server
+### 1. JSON documents in SQL Server
 
 Use nvarchar(max) data type to store JSON documents up to 2 GB in size in a column of a SQL Server table.
 If your JSON < 8 KB is recommended to use nvarchar(4000) for performance reasons.

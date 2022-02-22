@@ -1,7 +1,7 @@
 ## Send an email with Azure Data Factory through Azure Logic App
 
 In this demo I assume you have already configured a pipeline in Azure Data Factory and you want only to send an email at the end of it.
-<br><br>
+<br>
 
 ### 1. Create a Logic App
 
@@ -49,7 +49,7 @@ We now add To, Subject and Body, and use the "Add Dynamic Content" link to add t
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1638460563127/oWofQxD8V.png)
 
 Then, we can save the Logic App and Open our Data Factory pipeline.
-<br><br><br>
+<br>
 
 ### 2. Add to Azure Data Factory
 

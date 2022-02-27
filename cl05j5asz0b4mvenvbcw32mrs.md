@@ -85,10 +85,10 @@ Another way of selecting data from an xml is using the xml methods: the xml data
 This is a more scalable way of working with xml data as it does not require a stored procedure that loads the entire document into memory.
 These methods receive as a parameter an XQuery expression to identify which xml components should be retrieved or modified.
 There are five major methods: query(), value(), nodes(), modify(), and exist().
-The value() method extracts a scalar value from an xml field, useful in particular to compare xml data with other columns:
-*value(XQuery, datatype)*
-The query() method extracts an xml value from an xml field:
-*query(XQuery)*
+The value() method extracts a scalar value from an xml field, useful in particular to compare xml data with other columns:  
+*value(XQuery, datatype)*  
+The query() method extracts an xml value from an xml field:  
+*query(XQuery)*  
 
 ```
 SELECT ColumnXML.value('(/breakfast_menu/food/name)[2]', 'varchar(255)') as FoodName,

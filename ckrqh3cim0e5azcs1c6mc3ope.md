@@ -83,7 +83,7 @@ del(famiglia2[-1])  #delete last element
 1987 in Ceci  #TRUE if 1987 value is in Ceci list
 ```
 
-# Sets
+### Sets
 collections like tuples and lists but unordered and with unique elements
 ```
 set1 = {'a',1,2,'a',3}
@@ -92,7 +92,7 @@ set2 = {'a',4}
 set1 & set2: {'a'}
 ```
 
-# Dictionaries (keys)
+### Dictionaries (keys)
 collections with name (no duplicates) for each element
 ```
 x = {"Massi Figini": "@massyfigini", "Primo Drudi": "@primodrudi"}
@@ -270,7 +270,7 @@ Some methods modified the element that calls them:
 - File1.close -> close connection to File1
 
 
-# Class
+### Class
 
 Class example:
 ``` 

@@ -1,4 +1,4 @@
-## T-SQL: Identity
+## T-SQL: Some notes on Identity
 
 
 ```

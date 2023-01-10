@@ -1,10 +1,10 @@
-## XML documents in SQL Server and Azure SQL Database
+# XML documents in SQL Server and Azure SQL Database
 
-### 1. XML documents in SQL Server and Azure SQL Database
+### 1\. XML documents in SQL Server and Azure SQL Database
 
 While JSON uses nvarchar type, XML has a dedicated column type of the same name in SQL Server and Azure SQL Database.
 
-```
+```sql
 -- Create table and insert data for the examples
 CREATE TABLE [dbo].[XMLexample](
 	[id] [int] IDENTITY(1,1) NOT NULL,
@@ -50,16 +50,15 @@ INSERT INTO [dbo].[XMLexample]
 </breakfast_menu>
 '
 )
-``` 
+```
 
 In SQL Server Management Studio if you load an XML field, the cell is cliccable, if you click on them a new window opens with the XML content.
 
+### 2\. Selecting Data from XML
 
-### 2. Selecting Data from XML
+One method to query XML data is using the stored procedure sp\_xml\_preparedocument to load the xml, and then the OPENXML function to select parts of that.
 
-One method to query XML data is using the stored procedure sp_xml_preparedocument to load the xml, and then the OPENXML function to select parts of that.
-
-```
+```sql
 DECLARE @doc int;
 DECLARE @xmldoc xml = (SELECT ColumnXML FROM [dbo].[XMLexample] WHERE Id = 1)
 
@@ -77,20 +76,19 @@ WITH (
 
 You can go more in depth with the syntax of OPENXML [here](https://docs.microsoft.com/en-us/sql/t-sql/functions/openxml-transact-sql?view=sql-server-ver15).
 
-**NB**: 
-- OPENXML function can't work directly with an XML text, it needs the sp_xml_preparedocument stored procedure.
-- The sp_xml_preparedocument loads the entire document in memory so watch out for large memory consumption if the queried document is big.
+**NB**:
 
-Another way of selecting data from an xml is using the xml methods: the xml data type provide multiple methods that help you work with xml data that is stored in a variable or column of xml type.
-This is a more scalable way of working with xml data as it does not require a stored procedure that loads the entire document into memory.
-These methods receive as a parameter an XQuery expression to identify which xml components should be retrieved or modified.
-There are five major methods: query(), value(), nodes(), modify(), and exist().
-The value() method extracts a scalar value from an xml field, useful in particular to compare xml data with other columns:  
+* OPENXML function can't work directly with an XML text, it needs the sp\_xml\_preparedocument stored procedure.
+    
+* The sp\_xml\_preparedocument loads the entire document in memory so watch out for large memory consumption if the queried document is big.
+    
+
+Another way of selecting data from an xml is using the xml methods: the xml data type provide multiple methods that help you work with xml data that is stored in a variable or column of xml type. This is a more scalable way of working with xml data as it does not require a stored procedure that loads the entire document into memory. These methods receive as a parameter an XQuery expression to identify which xml components should be retrieved or modified. There are five major methods: query(), value(), nodes(), modify(), and exist(). The value() method extracts a scalar value from an xml field, useful in particular to compare xml data with other columns:  
 *value(XQuery, datatype)*  
 The query() method extracts an xml value from an xml field:  
-*query(XQuery)*  
+*query(XQuery)*
 
-```
+```sql
 SELECT ColumnXML.value('(/breakfast_menu/food/name)[2]', 'varchar(255)') as FoodName,
 		ColumnXML.value('(/breakfast_menu/food/calories)[2]', 'int') as Calories
 FROM dbo.XMLexample
@@ -101,10 +99,9 @@ FROM dbo.XMLexample
 
 You could read the XQuery language reference [here](https://docs.microsoft.com/en-us/sql/xquery/xquery-expressions?view=sql-server-ver15) to learn more on the XQuery language you can use in SQL Server.
 
-The nodes() method shred an xml data type into relational data to identify nodes that will be mapped into rows. It will return a table with one column which contains a logical copy of the xml that's based on the query expression provided.
-The combination of nodes and value uses xml indexes effectively, which means it's more scalable than using OPENXML.
+The nodes() method shred an xml data type into relational data to identify nodes that will be mapped into rows. It will return a table with one column which contains a logical copy of the xml that's based on the query expression provided. The combination of nodes and value uses xml indexes effectively, which means it's more scalable than using OPENXML.
 
-```
+```sql
 DECLARE @xml xml = (SELECT ColumnXML FROM dbo.XMLexample)
 
 SELECT doc.col.value('name[1]', 'varchar(255)') as FoodName,
@@ -112,12 +109,11 @@ SELECT doc.col.value('name[1]', 'varchar(255)') as FoodName,
 FROM @xml.nodes('/breakfast_menu/food') doc(col)
 ```
 
-
-### 3. Updating XML data
+### 3\. Updating XML data
 
 We can update an xml document by using the modify() method within a SET statement and the XQuery DML language, that has three case-sensitive keywords: insert, delete and replace value of.
 
-```
+```sql
 -- replace the price of the french toast
 UPDATE dbo.XMLexample
 SET ColumnXML.modify('
@@ -146,13 +142,11 @@ as last into (/breakfast_menu/food)[5]
 ')
 ```
 
+### 4\. Filtering XML data
 
-### 4. Filtering XML data
+To filter data based on values that are stored in your XML field, you could use value() to return a scalar and do a comparison or you could use an operator in your XQuery expression, or in alternative you could use the exist() methods. The result of the exist() method is a boolean value.
 
-To filter data based on values that are stored in your XML field, you could use value() to return a scalar and do a comparison or you could use an operator in your XQuery expression, or in alternative you could use the exist() methods.
-The result of the exist() method is a boolean value.
-
-```
+```sql
 -- extract only the table records which have a description tag in the xml
 SELECT *
 FROM dbo.XMLexample

@@ -3,7 +3,7 @@ title: "JSON documents in SQL Server and Azure SQL Database"
 datePublished: Sat Jan 22 2022 19:34:51 GMT+0000 (Coordinated Universal Time)
 cuid: ckyq8dzwj0eeg7js13xfcb5e2
 slug: json-documents-in-sql-server-and-azure-sql-database
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1683823894007/a0b5f4c5-e908-48ca-8527-4bcd623e94c3.png
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1683824777356/b307d2cf-8335-4fb9-99e9-8741d69e4bc6.png
 tags: sql-server, azure, json, sql
 
 ---

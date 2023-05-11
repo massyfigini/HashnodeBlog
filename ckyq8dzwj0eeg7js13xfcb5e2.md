@@ -3,7 +3,7 @@ title: "JSON documents in SQL Server and Azure SQL Database"
 datePublished: Sat Jan 22 2022 19:34:51 GMT+0000 (Coordinated Universal Time)
 cuid: ckyq8dzwj0eeg7js13xfcb5e2
 slug: json-documents-in-sql-server-and-azure-sql-database
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1681377979306/a7351b3e-d3cf-4fbe-8a36-3876cc39536b.png
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1683823894007/a0b5f4c5-e908-48ca-8527-4bcd623e94c3.png
 tags: sql-server, azure, json, sql
 
 ---
@@ -16,7 +16,7 @@ Use nvarchar(max) data type to store JSON documents up to 2 GB in size in a colu
 
 To see if a string contains a valid JSON you can use the function ISJSON(). ISJSON(column) It returns 1 if the column contains valid JSON, otherwise returns 0.
 
-```plaintext
+```sql
 -- Extract only the records containing a valid JSON in the Post_Json column
 SELECT *
 FROM dbo.Posts
@@ -35,7 +35,7 @@ JSON\_QUERY() to retrieve a JSON object or array from a JSON column. JSON\_QUERY
 
 We can use JSON\_VALUE and JSON\_QUERY both in the select and in the where part of a query.
 
-```plaintext
+```sql
 -- The Column Post_Json in the table dbo.Posts contains a JSON
 SELECT JSON_VALUE(Post_Json, '$.Post.Title') AS Title
 	,JSON_QUERY(Post_Json, '$.Post.Author') AS Author  -- used JSON_QUERY because the result is a JSON object not only a value
@@ -48,7 +48,7 @@ WHERE JSON_VALUE(Post_Json, '$.Post.Title') = 'AWS in Python with Boto3'
 
 Now I want to retrieve a JSON from traditional columns that contain structured data. We can use FOR JSON PATH or FOR JSON AUTO
 
-```plaintext
+```sql
 -- With FOR JSON PATH we have full control over the format
 SELECT *
 FROM dbo.Table1
@@ -64,7 +64,7 @@ FOR JSON AUTO
 
 To modify a JSON column with T-SQL, we use the function JSON\_MODIFY() with the JSON column, the JSON path and the new value. JSON\_MODIFY(jsoncolumn, '$.employee.birthyear', '1983')
 
-```plaintext
+```sql
 UPDATE dbo.Posts
 SET Post_Json = JSON_MODIFY(Post_Json, '$.Post.Title', 'Basic Scala')
 WHERE JSON_VALUE(Post_Json, '$.Post.Id') = '61'
@@ -87,7 +87,7 @@ Recap:
 
 You can import JSON files from disk using OPENROWSET.
 
-```plaintext
+```sql
 DECLARE @JSONfile varchar(max);
 
 SELECT @JSONfile = BulkColumn   -- BulkColumn is the return value from OPENROWSET
@@ -98,7 +98,7 @@ PRINT @JSONfile;
 
 You can import JSON objects directly from a string using OPENJSON and parse it as a table.
 
-```plaintext
+```sql
 DECLARE @JSONfile varchar(max);
 
 SET @JSONfile = N'[

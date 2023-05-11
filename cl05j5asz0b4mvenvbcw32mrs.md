@@ -3,7 +3,7 @@ title: "XML documents in SQL Server and Azure SQL Database"
 datePublished: Sun Feb 27 2022 17:12:16 GMT+0000 (Coordinated Universal Time)
 cuid: cl05j5asz0b4mvenvbcw32mrs
 slug: xml-documents-in-sql-server-and-azure-sql-database
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1681377640451/48c94dfd-7d98-430e-aa68-93cd8db06bc3.png
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1683822482062/cc648744-e2e3-454a-8e12-53d504a42c8a.png
 tags: sql-server, xml, azure, sql
 
 ---

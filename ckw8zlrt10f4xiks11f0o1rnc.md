@@ -1,9 +1,16 @@
-## Intro to Spark SQL in Python
+---
+title: "Intro to Spark SQL in Python"
+datePublished: Sun Nov 21 2021 08:37:28 GMT+0000 (Coordinated Universal Time)
+cuid: ckw8zlrt10f4xiks11f0o1rnc
+slug: intro-to-spark-sql-in-python
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1683817423420/49ce4fb3-f0ba-46ed-971f-0ed83c4f1bc1.png
+tags: python, spark, sql
 
-Spark SQL is a component of Apache Spark that works with tabular data.  
+---
 
+Spark SQL is a component of Apache Spark that works with tabular data.
 
-```
+```python
 # Load data from file
 df = spark.read.csv("trains.csv", header=True)
 
@@ -43,12 +50,11 @@ from pyspark.sql.functions import lead
 dot_df = df.withColumn('time_next', lead('time', 1)
         .over(Window.partitionBy('train_id')
         .orderBy('time')))
-
-``` 
+```
 
 Create a User Defined Function:
 
-```
+```python
 # create a udf that returns true if a column is less then 5 characters long
 
 from pyspark.sql.functions import udf
@@ -61,7 +67,4 @@ udf_short = udf(lambda x:
 
 # we use the udf just as we would a built-in function
 df.select(udf_short('data').alias('is_short').show(10)
-
-``` 
-
-
+```

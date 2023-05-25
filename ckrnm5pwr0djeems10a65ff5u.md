@@ -1,4 +1,12 @@
-## Connect Power BI to an Azure Table Storage
+---
+title: "Connect Power BI to an Azure Table Storage"
+datePublished: Wed Jul 28 2021 14:57:53 GMT+0000 (Coordinated Universal Time)
+cuid: ckrnm5pwr0djeems10a65ff5u
+slug: connect-power-bi-to-an-azure-table-storage
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1685031483420/69c15da6-8e43-4c32-8397-29c38a006d65.png
+tags: tutorial, data, nosql, azure
+
+---
 
 In the Azure Portal, select your Storage Account, go to "Tables", and write down the Table's URL.  
 

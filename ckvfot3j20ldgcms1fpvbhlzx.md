@@ -1,12 +1,20 @@
-## AWS in Python with Boto3
+---
+title: "AWS in Python with Boto3"
+datePublished: Sun Oct 31 2021 20:29:55 GMT+0000 (Coordinated Universal Time)
+cuid: ckvfot3j20ldgcms1fpvbhlzx
+slug: aws-in-python-with-boto3
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1685030922895/676fbe71-ab85-4fb1-9b03-434624ad214c.png
+tags: data, aws, python
 
-To interact with AWS in Python, there is the Boto3 library.  
+---
 
-### 1. AWS S3  
+To interact with AWS in Python, there is the Boto3 library.
+
+### 1\. AWS S3
 
 S3 is the AWS Storage solution.
 
-```
+```sql
 import boto3
 
 # Generate the boto3 client for interacting with S3
@@ -47,13 +55,12 @@ obj = s3.get_object(Bucket='new_bucket_230383',Key='m455y.csv')
 
 # 2. Then read the file with pandas
 pd.read_csv(obj['Body'])   # Body contains the data, the rest are the metadata
-
-``` 
+```
 
 By default, files in S3 are private.  
 In the web console or with some boto methods, you can generate public file or you can temporary shared private files:
 
-```
+```sql
 #Temporary shared file with get_object method
 share_url = s3.generate_presigned_url(
      ClientMethod='get_object',
@@ -62,16 +69,14 @@ share_url = s3.generate_presigned_url(
 
 #Open Temporary shared files in pandas
 pd.read_csv(share_url)
+```
 
-``` 
-
-### 2. AWS SNS
+### 2\. AWS SNS
 
 SNS = Simple Notification Service.  
-With SNS you can send email, text message and push notifications.  
+With SNS you can send email, text message and push notifications.
 
-
-```
+```sql
 # Initialize the SNS client
 sns = boto3.client('sns',
      region_name='eu-central-1',
@@ -118,14 +123,13 @@ sns.publish(
 sns.publish(
      PhoneNumber = '+393331234567'
      Message = 'Hello world!')
-                               
-``` 
-
-### 3. AWS REKOGNITION
-
-Computer vision API by AWS.  
-
 ```
+
+### 3\. AWS REKOGNITION
+
+Computer vision API by AWS.
+
+```sql
 # Initialize the S3 client
 s3 = boto3.client('s3',
      region_name='eu-central-1',
@@ -154,13 +158,13 @@ rekog.detect_labels(
      Image={'S3Object': {
           'Bucket': 'm455y-img',
           'Name': 'file1.jpg'}})
-``` 
-
-### 4. AWS TRANSLATE
-
-Real-time translation service by AWS.  
-
 ```
+
+### 4\. AWS TRANSLATE
+
+Real-time translation service by AWS.
+
+```sql
 # Initialize the Translate client
 translate = boto3.client('translate',
      region_name='eu-central-1',
@@ -172,14 +176,13 @@ translate.translate_text(
      Text='Ciao, come stai?',
      SourceLanguageCode='auto',
      TargetLanguageCode='en')['Translated_Text']
-
 ```
 
-### 5. AWS COMPREHEND
+### 5\. AWS COMPREHEND
 
 Text comprehention service by AWS.
 
-```
+```sql
 # Initialize the Comprehend client
 comprehend = boto3.client('comprehend',
      region_name='eu-central-1',
@@ -194,7 +197,4 @@ comprehend.detect_dominant_language(
 comprehend.detect_sentiment(
      Text=''This article is really good.",
      LanguageCode='en')
-``` 
-
-
-
+```

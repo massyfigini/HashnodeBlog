@@ -1,8 +1,16 @@
-## Data Ingestion with pandas
+---
+title: "Data Ingestion with pandas"
+datePublished: Sat Apr 17 2021 15:32:20 GMT+0000 (Coordinated Universal Time)
+cuid: ckrp3365y01drzcs1ecebdsv2
+slug: data-ingestion-with-pandas
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1685031574532/a3d70085-bd6c-4b6d-b42f-4d00987bcf02.png
+tags: data, python, pandas
 
-### 1.  Importing Data from Flat Files and Spreadsheets
+---
 
-```
+### 1\. Importing Data from Flat Files and Spreadsheets
+
+```sql
 read_csv for all flat files
 import pandas as pd
 data = pd.read_csv('file.csv')
@@ -71,11 +79,11 @@ data = pd.read_excel('file.xlsx',
 
 #for non standard column date, es. 311299 for 31/12/1999
 format_string = '%d%m%y'
-``` 
+```
 
+### 2\. Importing Data from Databases
 
-### 2.  Importing Data from Databases
-``` 
+```sql
 import pandas as pd
 
 #library to connect to databases
@@ -95,28 +103,31 @@ query = 'SELECT col1, col2 FROM tab WHERE col1 > 0'
 
 #load weather with the SQL query
 tabloaded = pd.read_sql(query, engine)
-``` 
+```
 
-### 3.  Importing JSON Data and Working with APIs
-``` 
+### 3\. Importing JSON Data and Working with APIs
+
+```sql
 import pandas as pd
 
 #load a JSON file to a data frame
 jsondata = pd.read_json('file.json')
-``` 
+```
 
 we can specify the orientation of the JSON  
-'split' : dict like {index -> [index], columns -> [columns], data -> [values]}  
-'records' : list like [{column -> value}, ... , {column -> value}]  
-'index' : dict like {index -> {column -> value}}  
-'columns' : dict like {column -> {index -> value}}  
-'values' : just the values array  
-``` 
-jsondata = pd.read_json('file.json', orient = 'split')
-``` 
+'split' : dict like {index -&gt; \[index\], columns -&gt; \[columns\], data -&gt; \[values\]}  
+'records' : list like \[{column -&gt; value}, ... , {column -&gt; value}\]  
+'index' : dict like {index -&gt; {column -&gt; value}}  
+'columns' : dict like {column -&gt; {index -&gt; value}}  
+'values' : just the values array
 
-Import data from an API  
-``` 
+```sql
+jsondata = pd.read_json('file.json', orient = 'split')
+```
+
+Import data from an API
+
+```sql
 #requests library used for any url
 import requests
 
@@ -149,10 +160,11 @@ df = json_normalize(data["businesses"], sep="_", record_path="categories",
 		     meta=["name", "alias", "rating", 
 		               ["coordinates", "latitude"],["coordinates", "longitude"]],
                      meta_prefix="biz_")
-``` 
+```
 
-### 4.  Combining multiple datasets
-``` 
+### 4\. Combining multiple datasets
+
+```sql
 import pandas as pd
 
 #append datasets method
@@ -165,4 +177,4 @@ appended = df1.append(df2, ignore_index = True)
 #default is like sql inner join (only values in both dataframes) 
 merged = df1.merge(df2, on = 'col1')
 merged = df1.merge(df2, left_on = 'col1', right_on = 'col2')
-``` 
+```

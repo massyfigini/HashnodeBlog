@@ -1,11 +1,20 @@
-## Basic Airflow in Python
+---
+title: "Basic Airflow in Python"
+datePublished: Thu Aug 05 2021 09:50:10 GMT+0000 (Coordinated Universal Time)
+cuid: cks24cmej0ojfhqs1bvhub48s
+slug: basic-airflow-in-python
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1685031336213/c288a6b8-46c9-464a-b301-51a7455800d3.png
+tags: python, workflow, bash, apache, shell
 
-Airflow: platform to program workflows.  
+---
 
-DAG: workflow made up of tasks with dependencies.  
+Airflow: platform to program workflows.
+
+DAG: workflow made up of tasks with dependencies.
 
 Define a DAG in Python:
-```
+
+```sql
 from airflow.models import DAG
 from datetime import datetime
 
@@ -17,31 +26,30 @@ default_arguments = {
 
 #define the DAG object
 etl_dag = DAG('etl_workflow', default_args = default_arguments)
-``` 
+```
 
-The Airflow configurations and settings are in the airflow.cfg file.  
+The Airflow configurations and settings are in the airflow.cfg file.
 
-<br>
+  
 
 ### Operators
 
-Most common Airflow task: Operator.  
+Most common Airflow task: Operator.
 
-**Bash Operator**  
+**Bash Operator**
 
-```
+```sql
 from airflow.operators.bash_operator import BashOperator
 
 example_task = BashOperator(
      task_id='example',
      bash_command='example.sh',
      dag=etl_dag)
-``` 
-
-
-**Python Operator**  
-
 ```
+
+**Python Operator**
+
+```sql
 from airflow.operators.python_operator import PythonOperator
 
 def printme():
@@ -52,11 +60,12 @@ python_task = PythonOperator(
      #call the Python function
      python_callable=printme,
      dag=etl_dag)
-``` 
-To implement keyword arguments with the Python Operator, we define an argument on the task called *op_kwargs*. This is a dictionary consisting of the named arguments for the intended Python function.  
+```
+
+To implement keyword arguments with the Python Operator, we define an argument on the task called *op\_kwargs*. This is a dictionary consisting of the named arguments for the intended Python function.  
 Example of a task to download and save a file to the system within Airflow:
 
-```
+```sql
 def pull_file(URL, savepath):
     r = requests.get(URL)
     with open(savepath, 'wb') as f:
@@ -74,12 +83,11 @@ pull_file_task = PythonOperator(
     op_kwargs={'URL':'http://dataserver/sales.json', 'savepath':'latestsales.json'},
     dag=etl_dag
 )
-``` 
-
-
-**Email Operator**  
-
 ```
+
+**Email Operator**
+
+```sql
 from airflow.operators.email_operator import EmailOperator
 
 email_task = EmailOperator(
@@ -91,42 +99,50 @@ email_task = EmailOperator(
      dag=etl_dag)
 ```
 
-**Sensor**  
+**Sensor**
 
 Special type of operator that waits for a certain condition (ex. creation of a file, upload a database record, a response from a web request) to be true. We define how often to check for the condition to be true.  
 Sensor are assigned to tasks like normal operators.  
-Arguments:  
-* *mode* -> how to check for the condition  
- * mode='poke' -> default, run repeatedly  
- * mode='reschedule' -> give up task slot and try again later  
-* *poke_interval* -> how often to wait between checks  
-* *timeout* -> how long to wait before failing task  
+Arguments:
+
+* *mode* -&gt; how to check for the condition
+    
+* mode='poke' -&gt; default, run repeatedly
+    
+* mode='reschedule' -&gt; give up task slot and try again later
+    
+* *poke\_interval* -&gt; how often to wait between checks
+    
+* *timeout* -&gt; how long to wait before failing task
+    
 
 Ex. File Sensor (check for the existence of a file in a location):
 
-```
+```sql
 from airflow.contrib.sensors.file_sensor import FileSensor
 
 file_sensor_task = FileSensor(task_id='file_pres',                              
      filepath='data.csv',
      poke_interval=300,
      dag=etl_dag)
-``` 
-Other sensors:  
-* *ExternalTaskSensor* -> wait for a task in another DAG to complete  
-* *HttpSensor* -> request a web URL and check for content  
-* *SqlSensor* -> run a SQL query to check for content  
+```
 
+Other sensors:
 
+* *ExternalTaskSensor* -&gt; wait for a task in another DAG to complete
+    
+* *HttpSensor* -&gt; request a web URL and check for content
+    
+* *SqlSensor* -&gt; run a SQL query to check for content
+    
 
-
-<br>
+  
 
 ### Dependencies
 
-Task dependencies define a given order of task completion and are referred to *upstream* (>>, before) or *downstream* (<<, after) tasks.
+Task dependencies define a given order of task completion and are referred to *upstream* (&gt;&gt;, before) or *downstream* (&lt;&lt;, after) tasks.
 
-```
+```sql
 task1 = BashOperator(
      task_id='first',
      bash_command='example1.sh',
@@ -141,30 +157,34 @@ task2 = BashOperator(
 task1 >> task2
 
 #same would be task2 << task1
-``` 
+```
+
 Now task1 will be execute firstly and, after its completion, task2.  
 You can also mix upstream and downstream operators in the same workflow:
 
-``` 
+```sql
 task1 >> task2 << task3
 
 #is the same to this
 task1 >> task2
 task3 >> task2
-``` 
-Now task1 and task3 will be execute firstly and, after the completion of both, task2 will start.  
+```
 
-<br>
+Now task1 and task3 will be execute firstly and, after the completion of both, task2 will start.
 
+  
 
 ### Schedule
+
 For scheduling we can use the Unix CRON syntax:
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1628087659991/VfQXKnfnc.png)
+
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1628087659991/VfQXKnfnc.png align="left")
+
 So:  
 \* \* \* \* \* means run every seconds;  
-0 12 \* \* \* means run daily at noon;  
+0 12 \* \* \* means run daily at noon;
 
-```
+```sql
 from datetime import timedelta
 
 default_args = {
@@ -174,55 +194,68 @@ default_args = {
 
 #run every friday at 12.30 pm
 dag = DAG('update_dataflows', default_args=default_args, schedule_interval='30 12 * * 5')
-``` 
-<br>
+```
+
+  
 
 ### Run DAGs
 
 To run a specific task in shell:  
-airflow run [dag id] [task id] [start date] 
-```
+airflow run \[dag id\] \[task id\] \[start date\]
+
+```sql
 airflow run etl_dag move_file 2021-08-04
-``` 
+```
 
 To run a full DAG:  
-airflow trigger_dag -e [date] [dag_id]
-```
+airflow trigger\_dag -e \[date\] \[dag\_id\]
+
+```sql
 airflow trigger_dag -e 2021-08-04 etl_dag
-``` 
+```
 
 Some other shell command for airflow:
-* airflow -h -> description
-* airflow list_dags -> show all recognized DAGs, the executor used and if there are errors
-* airflow scheduler -> run the scheduler
 
+* airflow -h -&gt; description
+    
+* airflow list\_dags -&gt; show all recognized DAGs, the executor used and if there are errors
+    
+* airflow scheduler -&gt; run the scheduler
+    
 
-<br>
+  
 
 ### Executors
+
 Executors run tasks.  
 Some executors:
-* *SequentialExecutor* -> default, runs only a single task at the time
-* *LocalExecutor* -> runs on a single system, can execute multiple tasks in parallel
-* *CeleryExecutor* -> multiple Airflow systems can be configured as workers for a given set of workflows/tasks. Really powerful  
-It's also possible to create executors.  
+
+* *SequentialExecutor* -&gt; default, runs only a single task at the time
+    
+* *LocalExecutor* -&gt; runs on a single system, can execute multiple tasks in parallel
+    
+* *CeleryExecutor* -&gt; multiple Airflow systems can be configured as workers for a given set of workflows/tasks. Really powerful  
+    It's also possible to create executors.
+    
 
 You can determine your executor by looking the airflow.cfg file and search for the *executor=* line, it will specify the executor in use
-```
+
+```sql
 cat airflow/airflow.cfg | grep "executor = "
 
 # executor = SequentialExecutor
-``` 
+```
 
-<br>
+  
 
 ### SLAs
+
 SLA is the amount of time a task or a DAG should require to run.  
 An SLA Miss is any time the task/DAG doesn't meet the expected timing.  
 If a SLA is missed a log is stored.  
-You can define SLAs using the *sla* argument on the task, or on the *default_args* dictionary, where you can also set to send emails after failure or success.  
+You can define SLAs using the *sla* argument on the task, or on the *default\_args* dictionary, where you can also set to send emails after failure or success.
 
-```
+```sql
 from datetime import timedelta
 
 #sla argument
@@ -241,25 +274,29 @@ default_args={
 }
 
 dag = DAG('sla_dag', default_args=default_args)
-``` 
+```
 
-
-<br>
+  
 
 ### Variables
-Airflow built-in runtime variables.
-Some examples:
-* {{ ds }} -> execution date YYYY-MM-DD
-* {{ ds_nodash }} -> YYYYMMDD
-* {{ dag }} -> DAG object
 
-<br>
+Airflow built-in runtime variables. Some examples:
+
+* {{ ds }} -&gt; execution date YYYY-MM-DD
+    
+* {{ ds\_nodash }} -&gt; YYYYMMDD
+    
+* {{ dag }} -&gt; DAG object
+    
+
+  
 
 ### Templates
-Templates allow substitution of information during a DAG run, so you can add flexibility when defining task.  
-Templates are created using the jinja templating language.  
 
-```
+Templates allow substitution of information during a DAG run, so you can add flexibility when defining task.  
+Templates are created using the jinja templating language.
+
+```sql
 #iterate the same operation for multiple file
 templated_command = """
 {% for filename in params.filenames %}
@@ -287,14 +324,15 @@ clean_task = BashOperator(task_id='example_task',
                           bash_command=templated_command,
                           params={'filenames': filelist},
                           dag=example_dag)
-``` 
+```
 
-<br>
+  
 
 ### Branching
-For conditional logic, takes a python_callable to return the next task id to follow.  
 
-```
+For conditional logic, takes a python\_callable to return the next task id to follow.
+
+```sql
 from airflow.operators.python_operator import BranchPythonOperator
 
 #different executions in even or odd date
@@ -313,12 +351,13 @@ branch_task = BranchPythonOperator(
 #define the dependencies in both cases
 start_task >> branch_task >> even_task >> even_day_task2
 branch_task >> odd_task >> odd_day_task2
-``` 
-<br>
+```
+
+  
 
 ### A full example
 
-```
+```sql
 from airflow.models import DAG
 from airflow.contrib.sensors.file_sensor import FileSensor
 from airflow.operators.bash_operator import BashOperator
@@ -387,8 +426,4 @@ branch_task = BranchPythonOperator(task_id='check_day',
 sensor >> bash_task >> python_task
 
 python_task >> branch_task >> [email_task, no_email_task]
-``` 
-
-
-
-
+```

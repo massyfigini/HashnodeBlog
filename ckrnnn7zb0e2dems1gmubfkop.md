@@ -1,15 +1,24 @@
-## Basic Bash Scripting
+---
+title: "Basic Bash Scripting"
+datePublished: Sun Jul 18 2021 15:14:17 GMT+0000 (Coordinated Universal Time)
+cuid: ckrnnn7zb0e2dems1gmubfkop
+slug: basic-bash-scripting
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1690486852272/d661861a-f1e6-4b76-b1cd-024062567ccc.png
+tags: unix, bash, shell, beginners
 
-Begin with !/ and the bash location  
+---
 
+Begin with !/ and the bash location
+
+```sql
+!/usr/bash
 ```
-!/usr/bash  
-``` 
-extension .sh  
 
-Two possibility to run a bash script:  
+extension .sh
 
-```
+Two possibility to run a bash script:
+
+```sql
 #1
 bash script.sh
 
@@ -22,21 +31,22 @@ echo $1     #print first argument, One
 echo $3     #print third argument, Three
 echo $*     #print all the arguments
 echo $#     #print arguments count, 3
-``` 
+```
 
+### Variables
 
-### Variables  
-``` 
+```sql
 var1="hello"     #create a variable (no space around =)
 $var1     #reference the variable
 echo "good morning, $var1 and hi"
 
 #Variable in variable
 var2="Hi equal to $(var1)"
-``` 
+```
 
 ### Array
-``` 
+
+```sql
 myarray=(1 2 3 4 5)
 echo ${myarray[@]}     #return all elements
 echo ${myarray[@]:1:3}     #return three elements starting from second 
@@ -44,46 +54,45 @@ echo ${#myarray[@]}     #return length
 echo ${myarray[2]}     #return tird element (zero-indexing)
 myarray[0]=10     #change first element
 myarray+=(8)     #add a new element at the end
-``` 
+```
 
-### IF statement  
+### IF statement
 
-if [ condition ]; then  
-&nbsp;&nbsp;&nbsp;&nbsp;[do something...]  
+if \[ condition \]; then  
+    \[do something...\]  
 else  
-&nbsp;&nbsp;&nbsp;&nbsp;[do something else...]  
-fi  
+    \[do something else...\]  
+fi
 
-``` 
+```sql
 if [ $x == "hello" ]; then
     echo "hello!"
 else
     echo "hi!"
 fi
-``` 
+```
 
--eq -> equal to  
--ne -> not equal to  
--gt -> greater then  
--lt -> less then  
--ge -> greater  thenor equal to  
--le -> less then or equal to  
--e -> if file exists  
--s -> if file exists and has size greater then 0  
--r -> if file exists and is readable  
--w -> if file exists and is writable  
-|| -> OR  
-&& -> AND  
-
+\-eq -&gt; equal to  
+\-ne -&gt; not equal to  
+\-gt -&gt; greater then  
+\-lt -&gt; less then  
+\-ge -&gt; greater thenor equal to  
+\-le -&gt; less then or equal to  
+\-e -&gt; if file exists  
+\-s -&gt; if file exists and has size greater then 0  
+\-r -&gt; if file exists and is readable  
+\-w -&gt; if file exists and is writable  
+|| -&gt; OR  
+&& -&gt; AND
 
 ### FOR loops
 
-for x in {[START]..[STOP]..[INCREMENT]} [or] (([start];[end];[increment]))  
+for x in {\[START\]..\[STOP\]..\[INCREMENT\]} \[or\] ((\[start\];\[end\];\[increment\]))  
 do  
-&nbsp;&nbsp;&nbsp;&nbsp;[do something...]  
-done  
+    \[do something...\]  
+done
 
-``` 
+```sql
 for x in {1..5..2}     #{START..STOP..INCREMENT}
 do
     echo $x
@@ -105,30 +114,31 @@ for file in $(ls dir/ | grep -i 'hello')
 do
     echo $file
 done
-``` 
+```
 
 ### WHILE statements
-``` 
+
+```sql
 x = 1
 while [ $x -le 10]
 do
     echo $x
     ((x+=1))
 done
-``` 
+```
 
 ### CASE statements
 
 case 'VAR' in  
-&nbsp;&nbsp;&nbsp;&nbsp;PATTERN1)  
-&nbsp;&nbsp;&nbsp;&nbsp;COMMAND1 ;;  
-&nbsp;&nbsp;&nbsp;&nbsp;PATTERN2)  
-&nbsp;&nbsp;&nbsp;&nbsp;COMMAND2 ;;  
-&nbsp;&nbsp;&nbsp;&nbsp;*)  
-&nbsp;&nbsp;&nbsp;&nbsp;DEFAULT COMMAND ;;  
-esac  
+    PATTERN1)  
+    COMMAND1 ;;  
+    PATTERN2)  
+    COMMAND2 ;;  
+    \*)  
+    DEFAULT COMMAND ;;  
+esac
 
-``` 
+```sql
 # move file with name hello, hi in their folder, remove ciao and hola files and move all the other file in another folder
 case $(cat $1) in
     *hello*)
@@ -140,39 +150,40 @@ case $(cat $1) in
     *)
     mv $1 others/ ;;
 esac
-``` 
+```
 
-### Basic Functions  
+### Basic Functions
 
-function_name () {  
-&nbsp;&nbsp;&nbsp;&nbsp;[function code]  
-&nbsp;&nbsp;&nbsp;&nbsp;return [something]  
-}  
+function\_name () {  
+    \[function code\]  
+    return \[something\]  
+}
 
-alternative syntax:  
+alternative syntax:
 
-function function_name {  
-&nbsp;&nbsp;&nbsp;&nbsp;[function code]  
-&nbsp;&nbsp;&nbsp;&nbsp;return [something]  
-}  
+function function\_name {  
+    \[function code\]  
+    return \[something\]  
+}
 
 call the function:  
-function_name  
+function\_name
 
+### Scheduling scripts with Cron
 
-### Scheduling scripts with Cron  
-cron: time-based job scheduler  
+cron: time-based job scheduler
 
+```sql
+echo "* * * * * python create_model.py" | crontab
 ```
-echo "* * * * * python create_model.py" | crontab  
-``` 
 
-echo scheduler command into cromtab  
+echo scheduler command into cromtab
 
-5 stars to set, one for each time unit:  
+5 stars to set, one for each time unit:
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1627486424938/2UH4h1541.png)  
-``` 
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1627486424938/2UH4h1541.png align="left")
+
+```sql
 #run every minutes forever
 * * * * * bash script.sh
 
@@ -190,4 +201,4 @@ crontab -l
 
 #edit your cronjob list
 crontab -e
-``` 
+```

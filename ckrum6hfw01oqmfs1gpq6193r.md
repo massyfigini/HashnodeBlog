@@ -1,8 +1,15 @@
-## T-SQL: DATEDIFF() between working dates
+---
+title: "T-SQL: DATEDIFF() between working dates"
+datePublished: Fri Jun 17 2016 12:32:43 GMT+0000 (Coordinated Universal Time)
+cuid: ckrum6hfw01oqmfs1gpq6193r
+slug: t-sql-datediff-between-working-dates
+tags: sql-server, sql
 
-Function for see the difference between dates in working days.
+---
 
-```
+Function to see differences between dates in working days.
+
+```plaintext
 CREATE FUNCTION dbo.DifferenceWorkingDays (@Data1 AS DATE, @Data2 AS DATE)
 
 RETURNS INT
@@ -33,11 +40,13 @@ BEGIN
 END
 
 GO
-``` 
+```
 
-You can call it instead DATEDIFF() if you need the working day difference.  
-``` 
+You can call it instead DATEDIFF() if you need the working day difference.
+
+```plaintext
 SELECT Database.dbo.DifferenceWorkingDays(GETDATE(), '2016-06-24')
-``` 
+```
+
 To skip also holiday outside saturday and sundays, you have to add a custom table with this dates and include it in the function.  
 If you want to add working days to a date, take a look [here](https://massyfigini.hashnode.dev/t-sql-add-working-days-to-a-date).

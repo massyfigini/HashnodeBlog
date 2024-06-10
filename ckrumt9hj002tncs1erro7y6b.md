@@ -1,9 +1,15 @@
-## T-SQL: Function to create a datetime
+---
+title: "T-SQL: Function to create a datetime"
+datePublished: Fri Sep 30 2016 12:47:56 GMT+0000 (Coordinated Universal Time)
+cuid: ckrumt9hj002tncs1erro7y6b
+slug: t-sql-function-to-create-a-datetime
+tags: sql-server, sql
 
-DATEFROMPARTS() function is from SQL Server version 2012 and later, working on SQL Server 2008 I have to created a function to create a datetime from parts.  
+---
 
+DATEFROMPARTS() function is from SQL Server version 2012 and later, working on SQL Server 2008 I had to create a function to create a datetime from parts.
 
-```
+```plaintext
 CREATE FUNCTION dbo.BuildDate(@Y AS int, @MO AS int, @D as int, @H as int = 0, @MI as int = 0, @S as int = 0)
 
 RETURNS DATETIME
@@ -27,10 +33,10 @@ BEGIN
     RETURN @Data
        
 END
-``` 
+```
 
-Let's use it: 
+Let's use it:
 
-``` 
+```plaintext
 SELECT dbo.BuildDate(2016,9,30,12,43, default)
-``` 
+```

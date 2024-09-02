@@ -3,7 +3,6 @@ title: "Use Stored Procedures with Temporary Tables in SSIS"
 datePublished: Thu Aug 06 2020 16:03:33 GMT+0000 (Coordinated Universal Time)
 cuid: ckrp4131f01q2zcs12vh778sl
 slug: use-stored-procedures-with-temporary-tables-in-ssis
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1718039188840/c3dab437-e6b8-4dbf-9b8a-996c902512f1.png
 tags: sql-server, ssis, sql-server-integration-services
 
 ---

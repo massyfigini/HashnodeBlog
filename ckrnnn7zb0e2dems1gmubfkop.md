@@ -3,7 +3,6 @@ title: "Basic Bash Scripting"
 datePublished: Sun Jul 18 2021 15:14:17 GMT+0000 (Coordinated Universal Time)
 cuid: ckrnnn7zb0e2dems1gmubfkop
 slug: basic-bash-scripting
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1690486852272/d661861a-f1e6-4b76-b1cd-024062567ccc.png
 tags: unix, bash, shell, beginners
 
 ---

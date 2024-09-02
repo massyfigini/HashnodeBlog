@@ -3,7 +3,6 @@ title: "Install and configure Certificates in SSRS"
 datePublished: Fri Jun 23 2023 22:00:00 GMT+0000 (Coordinated Universal Time)
 cuid: clx980ghp000009la18njek3n
 slug: install-and-configure-certificates-in-ssrs
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1718038839281/aa93fac2-5543-4d4a-baad-30392b159319.png
 tags: certificates, ssrs, azure-vm
 
 ---

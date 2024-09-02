@@ -3,7 +3,6 @@ title: "Send html emails with SSIS"
 datePublished: Mon Jul 20 2020 08:13:15 GMT+0000 (Coordinated Universal Time)
 cuid: ckrq2nq8j09cazcs163mi045u
 slug: send-html-emails-with-ssis
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1718039376202/039fa40b-561a-4698-b706-ab919079704f.png
 tags: sql-server, csharp, html-emails, emails, ssis, sql-server-integration-services
 
 ---

@@ -3,7 +3,6 @@ title: "Data Processing in Shell"
 datePublished: Sat Jul 10 2021 15:44:00 GMT+0000 (Coordinated Universal Time)
 cuid: ckrnonjrl0etgfws16fapgnlv
 slug: data-processing-in-shell
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1685031772505/48cf950d-69de-41a0-b594-eeb5a22cd737.png
 tags: data, unix, python, bash, shell
 
 ---

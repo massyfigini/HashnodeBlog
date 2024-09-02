@@ -3,7 +3,6 @@ title: "Send an email with Azure Data Factory through Azure Logic App"
 datePublished: Fri Dec 03 2021 16:56:35 GMT+0000 (Coordinated Universal Time)
 cuid: ckwqmpuyf011e3is10l9obot6
 slug: send-an-email-with-azure-data-factory-through-azure-logic-app
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1681378428226/8281938f-1793-4599-b924-42c460d990e8.png
 tags: azure, json
 
 ---

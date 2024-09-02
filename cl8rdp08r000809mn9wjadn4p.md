@@ -3,7 +3,6 @@ title: "Connect Azure DevOps data to Power BI"
 datePublished: Sun Oct 02 2022 13:28:13 GMT+0000 (Coordinated Universal Time)
 cuid: cl8rdp08r000809mn9wjadn4p
 slug: connect-azure-devops-data-to-power-bi
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1683822269219/803db031-f667-4d17-8dd5-86b4d37b135b.png
 ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1673372353370/dcceb4f4-dd2a-424a-a332-9e9530d5520d.png
 tags: azure, devops, odata, powerbi
 

@@ -3,7 +3,6 @@ title: "Temporal Tables in SQL Server and Azure SQL Database"
 datePublished: Thu Jan 06 2022 23:00:00 GMT+0000 (Coordinated Universal Time)
 cuid: clx96e0sm00000ak1f0zpcsq7
 slug: temporal-tables-in-sql-server-and-azure-sql-database
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1718035932656/8bcb73a6-8a24-4b30-933d-28cfda7181ab.png
 tags: sql-server, azure, sql, t-sql
 
 ---

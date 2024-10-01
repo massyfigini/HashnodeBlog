@@ -1,8 +1,15 @@
-## Python error handling
+---
+title: "Python error handling"
+datePublished: Sun Sep 02 2018 12:38:08 GMT+0000 (Coordinated Universal Time)
+cuid: ckrqcl1yv0c6gzcs12pbi5o6n
+slug: python-error-handling
+tags: python, error-handling, debugging
+
+---
 
 ### ERROR HANDLING WITH TRY-EXCEPT
 
-```
+```sql
 def echo(word, e=1):
     """Concatenate echo copies of a word"""
 
@@ -12,16 +19,18 @@ def echo(word, e=1):
     except:
         print("word must be a string and echo must be an integer.")
 
-    return echo_word 
-``` 
+    return echo_word
+```
 
 Call the function
-``` 
+
+```sql
 echo("hello", 5)
-``` 
+```
 
 ### ERROR HANDLING WITH RAISE
-``` 
+
+```sql
 # Define shout_echo
 def echo(word, e=1):
     """Concatenate echo copies of a word"""
@@ -32,9 +41,11 @@ def echo(word, e=1):
 
     echo_word = word * e
 
-    return echo_word 
-``` 
+    return echo_word
+```
+
 Call the function
-``` 
+
+```sql
 echo("hello", echo=5)
-``` 
+```

@@ -1,21 +1,29 @@
-## Regression on Python (part 1)
+---
+title: "Regression on Python (part 1)"
+datePublished: Thu Nov 01 2018 10:11:52 GMT+0000 (Coordinated Universal Time)
+cuid: ckrq4xbko09ur0ls1hpki40ch
+slug: regression-on-python-part-1
+tags: python, data-visualization
 
+---
 
-```
+```sql
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-``` 
+```
 
 Here are the data used:
-``` 
+
+```sql
 path = 'https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/DA0101EN/automobileEDA.csv'
 df = pd.read_csv(path)
 df.head()
-``` 
+```
 
 ### SIMPLE LINEAR REGRESSION
-``` 
+
+```sql
 from sklearn.linear_model import LinearRegression
 
 #create the linear regression object
@@ -32,54 +40,60 @@ lm.predict(X[0:5])
 #value of intercept and coefficient
 lm.intercept_
 lm.coef_
-``` 
+```
 
 ### MULTIPLE LINEAR REGRESSION
 
-``` 
+```sql
 Z = df[['horsepower', 'curb-weight', 'engine-size', 'highway-mpg']]
 
 lm.fit(Z, df['price'])
-``` 
-
+```
 
 ### MODEL EVALUATION USING VISUALIZATION
 
-``` 
+```sql
 import seaborn as sns
-``` 
+```
+
 **Simple linear regression**
-``` 
+
+```sql
 width = 12
 height = 10
 plt.figure(figsize=(width, height))
 sns.regplot(x="highway-mpg", y="price", data=df)
 plt.ylim(0,)     #y axis starts from 0
-``` 
+```
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1627637741008/Ie3szNZxs.png)
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1627637741008/Ie3szNZxs.png align="left")
 
-Is more correlated with price "peak-rpm" or "highway-mpg"?  
-``` 
+Is more correlated with price "peak-rpm" or "highway-mpg"?
+
+```sql
 df[["peak-rpm","highway-mpg","price"]].corr()
-``` 
+```
+
 highway-mpg is more correlated:
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1627637904513/1tlfgsRPl.png)
+
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1627637904513/1tlfgsRPl.png align="left")
 
 Residual Plot it's a graph that shows the residuals on the vertical y-axis and the independent variable on the horizontal x-axis.  
-We can see from this residual plot that the residuals are not randomly spread around the x-axis, which leads us to believe that maybe a non-linear model is more appropriate for this data.  
-``` 
+We can see from this residual plot that the residuals are not randomly spread around the x-axis, which leads us to believe that maybe a non-linear model is more appropriate for this data.
+
+```sql
 width = 12
 height = 10
 plt.figure(figsize=(width, height))
 sns.residplot(df['highway-mpg'], df['price'])
 plt.show()
-``` 
+```
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1627637981764/j6vUahbEc.png)
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1627637981764/j6vUahbEc.png align="left")
 
 **Multiple linear regression**
-``` 
+
+```sql
 #distribution plot: fitted values vs actual values
 Y_hat = lm.predict(Z)    #make the prediction
 
@@ -91,17 +105,17 @@ plt.xlabel('Price (in dollars)')
 plt.ylabel('Proportion of Cars')
 plt.show()
 plt.close()
-``` 
+```
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1627638972470/-WMh2FF0f.png)
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1627638972470/-WMh2FF0f.png align="left")
 
-Fitted reasonable close to actual, but there is space for improvement  
-
+Fitted reasonable close to actual, but there is space for improvement
 
 ### POLYNOMIAL REGRESSION
 
 Function for plotting the data:
-``` 
+
+```sql
 def PlotPolly(model, independent_variable, dependent_variabble, Name):
     x_new = np.linspace(15, 55, 100)
     y_new = model(x_new)
@@ -118,69 +132,83 @@ def PlotPolly(model, independent_variable, dependent_variabble, Name):
 #variables
 x = df['highway-mpg']
 y = df['price']
-``` 
+```
 
 Here we use a polynomial of the 3rd order (cubic):
-``` 
+
+```sql
 f = np.polyfit(x, y, 3)
 p = np.poly1d(f)
 print(p)
 PlotPolly(p, x, y, 'highway-mpg')
-``` 
+```
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1627639126385/2Hd_Iokww.png)
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1627639126385/2Hd_Iokww.png align="left")
 
-``` 
+```sql
 #coefficients
 np.polyfit(x, y, 3)    # y = a + b1X + b2X² + b3X³
-``` 
+```
 
 Multivariate Polynomial function: with four X variables we will have 15 coefficient
-``` 
+
+```sql
 from sklearn.preprocessing import PolynomialFeatures
 pr=PolynomialFeatures(degree=2)
 pr
 Z_pr=pr.fit_transform(Z)
 Z.shape     #The original data is of 201 samples and 4 features
 Z_pr.shape     #after the transformation, there 201 samples and 15 features
-``` 
+```
 
 ### MEASURES FOR IN-SAMPLE EVALUATION
 
 **Simple linear regression**:
-``` 
+
+```sql
 lm.fit(X, Y)     #highway_mpg_fit
 lm.score(X, Y)
-``` 
+```
+
 R^2: 0.4965911884339176
-``` 
+
+```sql
 Yhat=lm.predict(X)     #predictions
 from sklearn.metrics import mean_squared_error
 mean_squared_error(df['price'], Yhat)
-``` 
+```
+
 MSE: 31635042.944639888
 
 **Multiple linear regression**:
-``` 
+
+```sql
 lm.fit(Z, df['price'])     #fit the model
 lm.score(Z, df['price'])
-``` 
+```
+
 R^2: 0.8093562806577457
-``` 
+
+```sql
 Y_predict_multifit = lm.predict(Z)     #predictions
 mean_squared_error(df['price'], Y_predict_multifit)
-``` 
+```
+
 MSE: 11980366.87072649
 
 Polynomial linear regression:
-``` 
+
+```sql
 from sklearn.metrics import r2_score     #we use a different function
-r2_score(y, p(x)) 
-``` 
+r2_score(y, p(x))
+```
+
 R^2: 0.674194666390652
-``` 
-mean_squared_error(df['price'], p(x)) 
-``` 
+
+```sql
+mean_squared_error(df['price'], p(x))
+```
+
 MSE: 20474146.426361218
 
 Comparing these three models, we conclude that the MLR model is the best model to be able to predict price from our dataset.

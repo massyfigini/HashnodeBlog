@@ -3,7 +3,7 @@ title: "PySpark Fundamentals"
 datePublished: Sun Oct 17 2021 10:25:18 GMT+0000 (Coordinated Universal Time)
 cuid: ckuwikwy10gqnnus1dm2130wl
 slug: pyspark-fundamentals
-tags: data, python, spark, data-structures
+tags: data, python, spark, data-structures, pyspark
 
 ---
 

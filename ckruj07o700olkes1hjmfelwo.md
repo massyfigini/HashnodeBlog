@@ -1,10 +1,16 @@
-## Maps in R with Leaflet
+---
+title: "Maps in R with Leaflet"
+datePublished: Sun Apr 02 2017 11:04:13 GMT+0000 (Coordinated Universal Time)
+cuid: ckruj07o700olkes1hjmfelwo
+slug: maps-in-r-with-leaflet
+tags: r, maps, data-visualization
+
+---
 
 Leaflet = JavaScript open source library for interactive maps.  
-You can find an example I made  [here](https://massyfigini.github.io/Referendum_Course_Project_1.html), the entire code and the data to reproduce it are on [my Github](https://github.com/massyfigini/Developing_Data_Products_CP/tree/master/Course_Project_1).  
+You can find an example I made [here](https://massyfigini.github.io/Referendum_Course_Project_1.html), the entire code and the data to reproduce it are on [my Github](https://github.com/massyfigini/Developing_Data_Products_CP/tree/master/Course_Project_1).
 
-
-```
+```sql
 #library
 library(leaflet)
 
@@ -90,4 +96,4 @@ df %>%
   addTiles() %>%
   addCircleMarkers(color = df$col) %>%
   addLegend(labels = LETTERS[1:3], colors = c("blue", "red", "green"))
-``` 
+```

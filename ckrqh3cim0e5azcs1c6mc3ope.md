@@ -1,47 +1,73 @@
-## Basic Python
+---
+title: "Basic Python"
+datePublished: Sat Apr 30 2016 14:59:41 GMT+0000 (Coordinated Universal Time)
+cuid: ckrqh3cim0e5azcs1c6mc3ope
+slug: basic-python
+tags: python, beginner
 
-### Basics  
-- \# for comments  
-- string with " or '  
-- ; to have multiple commands in the same line  
-- case sensitive  
+---
 
+### Basics
+
+* \# for comments
+    
+* string with " or '
+    
+* ; to have multiple commands in the same line
+    
+* case sensitive
+    
 
 ### Operators
-- +,  -, *, /  
-- ** exponential  
-- % division rest  
-- // division without rest (int)  
-- \+ also to concatenate strings  
-- \* also with strings: "a"*5 = "aaaaa"  
-- <, >. <=. >=, == (equal), != (different) also with strings  
-- logical operators: and, or, not
 
+* +, -, \*, /
+    
+* \*\* exponential
+    
+* % division rest
+    
+* // division without rest (int)
+    
+* \+ also to concatenate strings
+    
+* \* also with strings: "a"\*5 = "aaaaa"
+    
+* &lt;, &gt;. &lt;=. &gt;=, == (equal), != (different) also with strings
+    
+* logical operators: and, or, not
+    
 
 ### Variables
-= to assign a variable
 
-```
+\= to assign a variable
+
+```python
 altezza = 1.80
 a = "ciao"
-``` 
+```
 
 ### Types
-- int, float, str, bool, function  
-- Type(variable) to see the type  
+
+* int, float, str, bool, function
+    
+* Type(variable) to see the type
+    
 
 ### Strings
-```
+
+```python
 Name = 'Cecilia'
 Name[0]   #'C'
 Name[1]   #'e'
 Name[-1]   #'a'
 Name[0:4]   #from 0 to 4 excluded: 'Ceci'
-``` 
+```
 
 ### Tuples
+
 Immutable
-```
+
+```python
 tuple1 = (0,10,2,4)
 tuple2 = ('a',1,1.5)
 tuple2[0]: 'a'
@@ -51,13 +77,14 @@ tuple4 = ('a',(1,2),3,'b',('hard','rock'))
 tuple4[1]: (1,2)
 tuple4[4][1]: 'rock'
 tuple4[4][1][0]: 'r'
-``` 
+```
 
 ### Lists
+
 Mutable  
 No differences from vector and lists, elements from different types
 
-```
+```python
 ["Massy", 1984, 33.1, True]
 Massy = ["Max", 1984, "M"]    #list saved in variable
 Ceci = ["Ceci", 1987, "F"]
@@ -84,8 +111,10 @@ del(famiglia2[-1])  #delete last element
 ```
 
 ### Sets
+
 collections like tuples and lists but unordered and with unique elements
-```
+
+```python
 set1 = {'a',1,2,'a',3}
 set1: {1,2,3,'a'}
 set2 = {'a',4}
@@ -93,8 +122,10 @@ set1 & set2: {'a'}
 ```
 
 ### Dictionaries (keys)
+
 collections with name (no duplicates) for each element
-```
+
+```python
 x = {"Massi Figini": "@massyfigini", "Primo Drudi": "@primodrudi"}
 x.keys()    #get all the keys of x
 x.values()    #get all the values of x
@@ -106,27 +137,41 @@ x = {"Massi Figini","@massyfigini", "notebook.massimilianofigini.com"}
 nome, twitter, blog= x
 ```
 
-
 ### Basic Functions
-- print(variable)  
-- max(list), min(list)  
-- round(num, decimal places) -> decimal places optional  
-- help(function)  
-- len(string or list)  
-- sum(list) -> sum of list elements  
-- int(numasstring), float(num), str(num), bool(1) -> convertions  
-- complex(real[, imag]) -> complex number  
-- sorted(num, reverse=True) -> return sorted elements  
-- split to split string or convert them to lists  
-```
+
+* print(variable)
+    
+* max(list), min(list)
+    
+* round(num, decimal places) -&gt; decimal places optional
+    
+* help(function)
+    
+* len(string or list)
+    
+* sum(list) -&gt; sum of list elements
+    
+* int(numasstring), float(num), str(num), bool(1) -&gt; convertions
+    
+* complex(real\[, imag\]) -&gt; complex number
+    
+* sorted(num, reverse=True) -&gt; return sorted elements
+    
+* split to split string or convert them to lists
+    
+
+```python
 'Massi Figini'.split(' ')[0]   #return Massi
 'Massi Figini'.split()   #return the list ['Massi','Figini']
 print('Dybala' + str(21))   #return Dybala21
 ```
-- set(lista) -> convert list to set  
-- File1 = open("percorso/file.txt","r") -> read txt and assign to File1, "r" for reading, "w" for writing and to create a file, "a" for appending  
 
-```
+* set(lista) -&gt; convert list to set
+    
+* File1 = open("percorso/file.txt","r") -&gt; read txt and assign to File1, "r" for reading, "w" for writing and to create a file, "a" for appending
+    
+
+```python
 #Es.
 sells = {
     'price': 10.15,
@@ -140,12 +185,12 @@ print(stringa.format(sells['customer'],
              sells['price'],
              sells['num']*vendita['prezzo']))
 ```
-The result is "Pogba buys 4 balls at the price of 10.15 each one for a total of 40.6".
 
+The result is "Pogba buys 4 balls at the price of 10.15 each one for a total of 40.6".
 
 ### Functions creation
 
-```
+```python
 #Function without elements
 def yeah():
       print("Yeah!")
@@ -165,34 +210,34 @@ add(6,7)
 a = add
 #Now I can use it with
 a(1,3)
-``` 
+```
 
 If I declare a variable inside a function, it exist only in it. If want a global variable define it with the prefix "global".
 
-
 ### If Cycle
+
 Execute indent lines if condition is true
 
-If [condition]:   
-      [code]  
-elif [condition2]:  
-      [code]  
+If \[condition\]:  
+\[code\]  
+elif \[condition2\]:  
+\[code\]  
 else:  
-     [code]  
+\[code\]
 
 elif (else if) and else are optional
-``` 
+
+```python
 def add(x,y,z=None):
     if (z==None):
         return x+y
     else:
         return x+y+z
-``` 
-
+```
 
 ### For Loop
 
-```
+```python
 #Example 1
 for i in range(1,11):
     print(i)
@@ -204,10 +249,11 @@ for i in years:
 years = [1983,1987,2014]
 for i,years in enumerate(years):
     print(i,years)
-``` 
+```
 
 ### While Loop
-``` 
+
+```python
 #Example
 dates = [1972,1982,1987]
 i = 0
@@ -218,10 +264,11 @@ while year != 1982:
     print(year)
 
 print(i, "loops")
-``` 
+```
 
 ### With Statement
-``` 
+
+```python
 #Useful example 1: read a file, do something, then close it
 with open('/documents/Example1.txt', 'r') as file1:
     FileContent = file1.read()
@@ -237,43 +284,65 @@ with open('Example2.txt','r') as readfile:
     with open('Example3.txt','w') as writefile:
           for line in readfile:
                 writefile.write(line)
-``` 
+```
 
 ### Methods
-Functions that belong to objects, different objects have different methods.  
-``` 
+
+Functions that belong to objects, different objects have different methods.
+
+```python
 famiglia.index("Massy")   #position of Massy in famiglia list
 Var.index("a")   #position of a in string variable Var
 famiglia.count("Massy")   #how many Massy in famiglia list
 famiglia.append(["Ceci", 1987, "F"])   #add sublist in list
 famiglia.extend(["Ceci"])   #add element to list
-``` 
-Other methods:  
-- a.capitalize() -> uppercase first letter  
-- a.upper() -> uppercase all  
-- a.find('a') -> find in a string  
-- a.count("o") -> count in string  
-- t.sort() -> sort elements of a list  
+```
 
-Some methods modified the element that calls them:  
-- a.replace("o","ops") -> replace in string  
-- t.remove("c") -> remove from list (first one finded)
-- t.reverse()
-- set1.add('b')
-- set1.remove('b')
-- set1.union(set2)
-- set1.intersection(set2)
-- set1.difference(set2) -> in set1 and not in set2  
-- set1.issubset(set2) -> true if subset  
-- File1.name -> name of file assigned to variable File1
-- File1.mode -> "r" read, "w" write, "a" append
-- File1.close -> close connection to File1
+Other methods:
 
+* a.capitalize() -&gt; uppercase first letter
+    
+* a.upper() -&gt; uppercase all
+    
+* a.find('a') -&gt; find in a string
+    
+* a.count("o") -&gt; count in string
+    
+* t.sort() -&gt; sort elements of a list
+    
+
+Some methods modified the element that calls them:
+
+* a.replace("o","ops") -&gt; replace in string
+    
+* t.remove("c") -&gt; remove from list (first one finded)
+    
+* t.reverse()
+    
+* set1.add('b')
+    
+* set1.remove('b')
+    
+* set1.union(set2)
+    
+* set1.intersection(set2)
+    
+* set1.difference(set2) -&gt; in set1 and not in set2
+    
+* set1.issubset(set2) -&gt; true if subset
+    
+* File1.name -&gt; name of file assigned to variable File1
+    
+* File1.mode -&gt; "r" read, "w" write, "a" append
+    
+* File1.close -&gt; close connection to File1
+    
 
 ### Class
 
 Class example:
-``` 
+
+```python
 class Persona:
     lavoro = 'Data Scientist'    #class variable
     def set_p(self, nome, luogo):   #method
@@ -283,9 +352,11 @@ class Persona:
 persona = Persona()
 persona.set_p('Massi','Milano')
 print('{} lives in {} and his dream job is {}'.format(persona.nome, persona.luogo, persona.lavoro))
-``` 
+```
+
 More complex class example:
-``` 
+
+```python
 # Import the library
 import matplotlib.pyplot as plt
 
@@ -341,25 +412,28 @@ BlueCircle.color
 
 # Call the method drawCircle
 BlueCircle.drawCircle()
-``` 
-
+```
 
 ### List comprehensions
+
 Ex. function
-``` 
+
+```python
 lista = []
 for i in range(1, 1000):
     if i % 2 == 0:
         lista .append(i)
-``` 
+```
 
 Same function with list comprehensions
-``` 
+
+```python
 lista = [i for i in range(0,1000) if i % 2 == 0]
-``` 
+```
 
 ### Date and time
-``` 
+
+```python
 import datetime as dt
 import time as tm
 tm.time()   #seconds from 1/1/1970
@@ -369,4 +443,4 @@ ora = dt.datetime.fromtimestamp(tm.time())
 
 #to take part of datetime:
 ora.year, ora.month, ora.day, ora.hour, ora.minute, ora.second
-``` 
+```

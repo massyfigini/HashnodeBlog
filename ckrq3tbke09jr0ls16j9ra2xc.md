@@ -1,7 +1,13 @@
-## Waffle Charts with Python
+---
+title: "Waffle Charts with Python"
+datePublished: Sat Jul 13 2019 08:47:59 GMT+0000 (Coordinated Universal Time)
+cuid: ckrq3tbke09jr0ls16j9ra2xc
+slug: waffle-charts-with-python
+tags: charts, python, data-visualization
 
+---
 
-```
+```sql
 import numpy as np 
 import pandas as pd
 from PIL import Image     #converting images into arrays
@@ -11,12 +17,12 @@ import matplotlib.patches as mpatches    #needed for waffle Charts
 mpl.style.use('ggplot')     #optional: for ggplot-like style
 
 df      #name of my table
-``` 
+```
 
 Waffle charts are not built into any of the Python visualization libraries.  
-So we have to create a function for it:  
+So we have to create a function for it:
 
-``` 
+```sql
 def create_waffle_chart(categories, values, height, width, colormap, value_sign=''):
     #compute the proportion of each category with respect to the total
     total_values = sum(values)
@@ -94,6 +100,6 @@ colormap = plt.cm.coolwarm      #color map class
 
 #Call the function
 create_waffle_chart(categories, values, height, width, colormap)     #call the function
-``` 
+```
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1627634731388/vaVSABjsv.png)
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1627634731388/vaVSABjsv.png align="left")

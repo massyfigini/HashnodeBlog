@@ -1,20 +1,27 @@
-## Basic Python Pandas
+---
+title: "Basic Python Pandas"
+datePublished: Sat Mar 24 2018 14:13:01 GMT+0000 (Coordinated Universal Time)
+cuid: ckrqda6t70cen0ls1hx5g6sqs
+slug: basic-python-pandas
+tags: python, beginner, pandas
+
+---
 
 For dataframes
 
-```
+```python
 import pandas as pd
-``` 
+```
 
-| Date Format | Read | Save |  
+| Date Format | Read | Save |
 | --- | --- | --- |
-| csv | pd.read_csv() | df.to_csv() |  
-| json | pd.read_json() | df.to_json() |  
-| excel | pd.read_excel() | df.to_excel()|  
-| hdf | pd.read_hdf() | df.to_hdf() |  
-| sql | pd.read_sql() | df.to_sql() |  
+| csv | pd.read\_csv() | df.to\_csv() |
+| json | pd.read\_json() | df.to\_json() |
+| excel | pd.read\_excel() | df.to\_excel() |
+| hdf | pd.read\_hdf() | df.to\_hdf() |
+| sql | pd.read\_sql() | df.to\_sql() |
 
-``` 
+```python
 df = pd.read_csv('folder/file.csv')     #import csv
 xlsx = ('folder/file.xlsx')
 df = pd.read_excel(xlsx)     #import excel file
@@ -58,4 +65,4 @@ df['Col1_bin].value_counts()    #values for each bin
 
 #dummy variables
 dummy_1 = pd.get_dummies(df['Col1'])    #if Col1 is a dummy, split to two columns (0,1)
-``` 
+```

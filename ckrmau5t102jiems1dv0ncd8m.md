@@ -1,17 +1,25 @@
-## R ggplot2 intro
+---
+title: "R ggplot2 intro"
+datePublished: Fri Mar 25 2016 23:00:00 GMT+0000 (Coordinated Universal Time)
+cuid: ckrmau5t102jiems1dv0ncd8m
+slug: r-ggplot2-intro
+tags: r, data-visualization
 
-Package "ggplot2"  
+---
 
+Package "ggplot2"
 
+```sql
+library(ggplot2)
 ```
-library(ggplot2)  
-``` 
 
-2 main functions: qplot() and ggplot(), more flexible  
+2 main functions: qplot() and ggplot(), more flexible
 
-### qplot()  
-It plots in a single function  
-```
+### qplot()
+
+It plots in a single function
+
+```sql
 #scatter plot with axis label
 qplot(x, y, data=tab)
 
@@ -39,12 +47,13 @@ qplot(z ,data=tab, binwidth=2)
 
 #bar plot of z based on y values
 qplot(z ,data=tab, geom="bar", weight=y)
-``` 
+```
 
-### ggplot()  
-Graph built in more steps  
+### ggplot()
 
-``` 
+Graph built in more steps
+
+```sql
 #x and y from tab data fram
 g <- ggplot(tab, aes(x, y))
 
@@ -91,4 +100,4 @@ g+geom_bar(stat='identity')
 
 #for plot x label use scale_x_continuous for continuous variable, scale_x_discrete for discrete
 g <- ggplot(tab, aes(x, y))+scale_x_continuous(breaks = c(1,2,3,4))
-``` 
+```

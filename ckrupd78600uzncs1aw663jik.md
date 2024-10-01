@@ -1,7 +1,13 @@
-## Basic Python Numpy
+---
+title: "Basic Python Numpy"
+datePublished: Sun Aug 28 2016 14:02:22 GMT+0000 (Coordinated Universal Time)
+cuid: ckrupd78600uzncs1aw663jik
+slug: basic-python-numpy
+tags: python, beginner
 
+---
 
-```
+```python
 import numpy as np
 
 mylist = [1, 2, 3]   #list
@@ -67,11 +73,11 @@ z.shape   #rows and column of md array z
 z[1][2]   #second row, third column element
 z[0][0,1]   #first row, first and second column of md array
 z.T   #traspose matrix
-``` 
-
+```
 
 For loop on numpy arrays:
-```
+
+```python
 test = np.random.randint(0, 10, (4,3))   #matrix from 0 to 9
 
 #row cycle:

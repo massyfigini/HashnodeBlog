@@ -1,24 +1,33 @@
-## Basic R
+---
+title: "Basic R"
+datePublished: Fri Oct 23 2015 22:00:00 GMT+0000 (Coordinated Universal Time)
+cuid: ckrm98n0b0223fws1ff366bm7
+slug: basic-r
+tags: r, beginner
 
-### CALCULATOR  
-+, -, *, /  
-Use ^ for raise to a power, function sqrt() for square root, abs() for absolute value.  
-<br>
+---
 
-### VARIABLES  
-```
+### CALCULATOR
+
++, -, \*, /  
+Use ^ for raise to a power, function sqrt() for square root, abs() for absolute value.
+
+### VARIABLES
+
+```sql
 #assign value to variable:
 x<-sqrt(4)
 
 #you can use a variable to build a new variable: 
 y<-x+5
-``` 
-
-### VECTORS (1)  
-Vector = elements of the same type  
-List = elements also of different types  
-
 ```
+
+### VECTORS (1)
+
+Vector = elements of the same type  
+List = elements also of different types
+
+```sql
 #function c() for vector construction, separator ","  
 z<-c(x,y,3.2,5,6)
 
@@ -27,22 +36,25 @@ c(z,8,12.6,z,y)
 
 #multiply by 2 every element of z vector.
 z*2
-``` 
-If we have 2 vectors of the same length, R do an operation element by element  
-If not, when finish the elements of the shorter one, R restart from the first  
 ```
+
+If we have 2 vectors of the same length, R do an operation element by element  
+If not, when finish the elements of the shorter one, R restart from the first
+
+```sql
 #this:
 c(1,2,3,4)*c(3,2)
 #is equal to this:
 c(1,2,3,4)*c(3,2,3,2)
 #both have this result: [3,4,9,8].
-``` 
-
-### LOGICAL VALUES  
-<, >, >=, <=, ==, !=  
-OR = |, AND = &  
-
 ```
+
+### LOGICAL VALUES
+
+&lt;, &gt;, &gt;=, &lt;=, ==, !=  
+OR = |, AND = &
+
+```sql
 TRUE & c(TRUE, FALSE, FALSE)  
 #this compare TRUE whith each element
 #the result is a vector: TRUE FALSE FALSE
@@ -50,13 +62,14 @@ TRUE & c(TRUE, FALSE, FALSE)
 TRUE && c(TRUE, FALSE, FALSE)
 #this compare TRUE with only the first element
 #the result is a value: TRUE
-``` 
-
-### FUNCTIONS (INTRO)  
-`functionname(param1, param2, ...)`  
-`args(functionname)` to see the arguments of the function  
-
 ```
+
+### FUNCTIONS (INTRO)
+
+`functionname(param1, param2, ...)`  
+`args(functionname)` to see the arguments of the function
+
+```sql
 #Function evaluation, !isTRUE() for the opposite.
 isTRUE(4>3)   
 
@@ -86,8 +99,9 @@ Sys.Date()
 mean(v)
 ```
 
-### INTERACTION WITH THE WORLD  
-```
+### INTERACTION WITH THE WORLD
+
+```sql
 #see working directory
 getwd()
 
@@ -137,19 +151,20 @@ install.packages("dplyr")
 
 #call an installed package
 library("dplyr")
-``` 
-
-### NA AND VECTORS (2)  
-NA = Not Available (like NULL in SQL, or Nothing in VB)
-NaN = indetermined value (0/0).
-
 ```
+
+### NA AND VECTORS (2)
+
+NA = Not Available (like NULL in SQL, or Nothing in VB) NaN = indetermined value (0/0).
+
+```sql
 is.na(x)
 #vector with TRUE when NA
-``` 
-square roots to filter only some data in a vector 
-
 ```
+
+square roots to filter only some data in a vector
+
+```sql
 #take only missing/not missing elements
 x[is.na(x)]
 x[!is.na(x)]
@@ -180,12 +195,14 @@ names(x) <- y   # Gli elementi di y usati come nome degli elementi di x
 
 identical(x,y)
 #TRUE if x equal to y
-``` 
-### DATE  
-Class date, YEAR-MONTH-DAY  
-Internally is number of days from 1970-01-01  
-
 ```
+
+### DATE
+
+Class date, YEAR-MONTH-DAY  
+Internally is number of days from 1970-01-01
+
+```sql
 #string to date
 as.Date("1987-05-26")
 
@@ -194,11 +211,11 @@ Sys.Date()
 
 #day since 1970-01-01
 unclass(VaiabileData)
-``` 
-Time classes: POSIXct e POSIXlt
-POSIXct: seconds from 1970-01-01
-POSIXlt: list of values (sec, min, hour, mon, year, ecc.)
-``` 
+```
+
+Time classes: POSIXct e POSIXlt POSIXct: seconds from 1970-01-01 POSIXlt: list of values (sec, min, hour, mon, year, ecc.)
+
+```sql
 #POSIXct system datetime
 Sys.time()   
 
@@ -228,12 +245,14 @@ difftime(Date1, Date2, units = 'weeks')   #dates differences in weeks
 
 #lubridate: great package for dates
 library(lubridate)
-``` 
+```
 
-### MATRICES AND DATA FRAMES  
+### MATRICES AND DATA FRAMES
+
 Matrix: table with only one data types  
 Data Frames: also different data types in the same data frame
-``` 
+
+```sql
 m <- matrix(1:20, 4, 5)
 #m now is a 4x5 matrix with values from 1 to 20
 
@@ -316,11 +335,12 @@ prop.table(fr)
 prop.table(fr, 1)   
 
 #column percentages
-prop.table(fr, 2)   
-``` 
+prop.table(fr, 2)
+```
 
 ### CREATE FUNCTIONS
-``` 
+
+```sql
 functionname <- function(arg1, arg2){
            #arguments
            #returned values
@@ -358,4 +378,4 @@ telegramf("hello","world","!")
 
 #call pastef function:
 "hello"%conc%"and"%conc%"goodbye"%conc%"world!"
-``` 
+```

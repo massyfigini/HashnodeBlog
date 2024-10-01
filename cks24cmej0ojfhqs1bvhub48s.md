@@ -4,7 +4,7 @@ datePublished: Thu Aug 05 2021 09:50:10 GMT+0000 (Coordinated Universal Time)
 cuid: cks24cmej0ojfhqs1bvhub48s
 slug: basic-airflow-in-python
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1685031336213/c288a6b8-46c9-464a-b301-51a7455800d3.png
-tags: python, workflow, bash, apache, shell
+tags: python, workflow, bash, shell, airflow
 
 ---
 

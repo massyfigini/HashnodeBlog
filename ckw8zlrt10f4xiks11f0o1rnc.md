@@ -3,7 +3,6 @@ title: "Intro to Spark SQL in Python"
 datePublished: Sun Nov 21 2021 08:37:28 GMT+0000 (Coordinated Universal Time)
 cuid: ckw8zlrt10f4xiks11f0o1rnc
 slug: intro-to-spark-sql-in-python
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1683817893182/ddfdbb5f-68da-4048-8ec7-450c517a1426.png
 tags: python, spark, sql
 
 ---

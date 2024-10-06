@@ -3,7 +3,6 @@ title: "Basic Scala"
 datePublished: Sun Nov 07 2021 19:27:23 GMT+0000 (Coordinated Universal Time)
 cuid: ckvpmnnkq0dki4as11ezchgjc
 slug: basic-scala
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1683817700416/780b50b6-f65f-49f2-89b4-33b9e16b81dd.png
 tags: scala
 
 ---

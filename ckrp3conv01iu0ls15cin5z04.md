@@ -3,7 +3,6 @@ title: "How to build and schedule a Python Twitter BOT"
 datePublished: Wed Jan 06 2021 16:42:27 GMT+0000 (Coordinated Universal Time)
 cuid: ckrp3conv01iu0ls15cin5z04
 slug: how-to-build-and-schedule-a-python-twitter-bot
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1690487376091/9258dd4e-824c-4735-9e7c-11bdc351bb15.png
 tags: tutorial, bot, python, bots
 
 ---

@@ -3,7 +3,6 @@ title: "Basic Shell"
 datePublished: Sat Jul 03 2021 16:26:01 GMT+0000 (Coordinated Universal Time)
 cuid: ckrnp9wqf0ezvfws1cs5aevee
 slug: basic-shell
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1685031691628/c5bff3c0-9fa8-427a-b2e8-c58a8c788943.png
 tags: unix, bash, shell, beginners
 
 ---

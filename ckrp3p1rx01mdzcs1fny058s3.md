@@ -3,7 +3,6 @@ title: "A Python Twitter BOT example: Covid-19 BOT Italia"
 datePublished: Sun Jan 17 2021 16:49:15 GMT+0000 (Coordinated Universal Time)
 cuid: ckrp3p1rx01mdzcs1fny058s3
 slug: a-python-twitter-bot-example-covid-19-bot-italia
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1690487102638/7c48bec7-1cf2-4ced-899f-2fb6d1858b0c.png
 tags: bot, python, bots, python-projects
 
 ---

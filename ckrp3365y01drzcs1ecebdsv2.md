@@ -3,7 +3,6 @@ title: "Data Ingestion with pandas"
 datePublished: Sat Apr 17 2021 15:32:20 GMT+0000 (Coordinated Universal Time)
 cuid: ckrp3365y01drzcs1ecebdsv2
 slug: data-ingestion-with-pandas
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1685031574532/a3d70085-bd6c-4b6d-b42f-4d00987bcf02.png
 tags: data, python, pandas
 
 ---

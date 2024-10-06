@@ -3,7 +3,6 @@ title: "AWS in Python with Boto3"
 datePublished: Sun Oct 31 2021 20:29:55 GMT+0000 (Coordinated Universal Time)
 cuid: ckvfot3j20ldgcms1fpvbhlzx
 slug: aws-in-python-with-boto3
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1685030922895/676fbe71-ab85-4fb1-9b03-434624ad214c.png
 tags: data, aws, python
 
 ---

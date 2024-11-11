@@ -8,7 +8,7 @@ tags: procrastination, self-improvement-1, self-help, self-help-books
 
 ---
 
-*These are only my personal notes about the book "Eat That Frog!: 21 Great Ways to Stop Procrastinating and Get More Done in Less Time" by Brian Tracy. Things that are important to me may not be as significant to you, and vice versa. If you are interested in the book, you can buy your copy* [***here***](https://www.amazon.com/Eat-That-Frog-Great-Procrastinating/dp/162656941X/ref=sr_1_1?crid=1D3JSEE1KETHJ&dib=eyJ2IjoiMSJ9.CfV0Fcwp1ByhsMd25Jfxxb2aObxStCajTA6v7BXKPhkOo0Zs7gLB6Wu1oggw6-tLK1oa2ugtvI5-KLEiyd4QF1qa98dtZT7SIWUYdMBhU0BZZddb0miVPpsopCBmqgbNpbD_tKaT92w3F9OLsRgHpVuG6Fv_zdCGOyio00JWiFWpPTpix8ZADQsPGzzs_ljMKPCQ3KdzqALGYA4i1Rret6ZItcjz6xx1QN-vhIbTEJI.XPmxIIHSw1coNEP6nvOiVWx2GGa3_bghNWhCfsrhjOE&dib_tag=se&keywords=eat+that+frog&qid=1721022630&sprefix=eat+that+%2Caps%2C185&sr=8-1)*.*
+*These are just my personal notes about the book "Eat That Frog!: 21 Great Ways to Stop Procrastinating and Get More Done in Less Time" by Brian Tracy. Things that are important to me may not be as significant to you, and vice versa. If you are interested in the book, you can buy your copy* [***here***](https://www.amazon.com/Eat-That-Frog-Great-Procrastinating/dp/162656941X/ref=sr_1_1?crid=1D3JSEE1KETHJ&dib=eyJ2IjoiMSJ9.CfV0Fcwp1ByhsMd25Jfxxb2aObxStCajTA6v7BXKPhkOo0Zs7gLB6Wu1oggw6-tLK1oa2ugtvI5-KLEiyd4QF1qa98dtZT7SIWUYdMBhU0BZZddb0miVPpsopCBmqgbNpbD_tKaT92w3F9OLsRgHpVuG6Fv_zdCGOyio00JWiFWpPTpix8ZADQsPGzzs_ljMKPCQ3KdzqALGYA4i1Rret6ZItcjz6xx1QN-vhIbTEJI.XPmxIIHSw1coNEP6nvOiVWx2GGa3_bghNWhCfsrhjOE&dib_tag=se&keywords=eat+that+frog&qid=1721022630&sprefix=eat+that+%2Caps%2C185&sr=8-1)*.*
 
 ### Introduction
 

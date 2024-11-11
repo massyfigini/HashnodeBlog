@@ -8,7 +8,7 @@ tags: self-help, self-help-books
 
 ---
 
-*These are only my personal notes about the book "Who Moved My Cheese?" by Dr. Spencer Johnson. Things that are important to me may not be as significant to you, and vice versa. If you are interested in the book you can buy your copy* [***here***](https://www.amazon.com/Who-Moved-My-Cheese-Mazing-ebook/dp/B004CR6AM4)*.*
+*These are just my personal notes about the book "Who Moved My Cheese?" by Dr. Spencer Johnson. Things that are important to me may not be as significant to you, and vice versa. If you are interested in the book you can buy your copy* [***here***](https://www.amazon.com/Who-Moved-My-Cheese-Mazing-ebook/dp/B004CR6AM4)*.*
 
 This book is a short fable about four characters - two mice named Sniff and Scurry, and two tiny humans named Hem and Haw - who live in a maze and search for cheese, which symbolizes happiness and success. When the cheese they rely on is moved, the mice quickly adapt and search for new cheese, while Hem and Haw resist the change. Eventually, Haw learns to embrace change and finds new cheese, realizing that adapting to change leads to new opportunities and happiness.
 

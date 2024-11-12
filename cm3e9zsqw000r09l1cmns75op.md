@@ -3,7 +3,7 @@ title: "The Presentation Secrets of Steve Jobs"
 datePublished: Fri Jun 13 2014 22:00:00 GMT+0000 (Coordinated Universal Time)
 cuid: cm3e9zsqw000r09l1cmns75op
 slug: the-presentation-secrets-of-steve-jobs
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1731307942113/0e8afadc-0dee-4957-9b68-71a7dc9772b2.jpeg
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1731405566205/60cbeb1c-779e-416b-8d4f-ffba22207f76.jpeg
 tags: presentations, self-improvement-1, self-help, self-help-books
 
 ---

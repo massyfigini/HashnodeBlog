@@ -72,7 +72,7 @@ tags: self-improvement-1, self-help, self-help-books
 
 Morning exercise helps wake you up, enhances mental clarity, and sustains higher energy levels throughout the day.
 
-**☺** ***My preference***\*: Yoga at home when it's cold or rainy, and biking outside when the weather is nice.\*
+**☺** ***My preference****: Yoga at home when it's cold or rainy, and biking outside when the weather is nice.*
 
 ### R is for Reading
 
@@ -89,9 +89,9 @@ The fastest way to achieve your goals is to learn from those who have already su
 
 * You must customize your life savers based on your needs.
     
-* Example schedule for 60 minutes of Miracle Morning : Silence, Affirmations, Visualization, Scribing: 5 minutes each; Exercise, Reading: 20 minutes each.
+* Example schedule for 60 minutes of Miracle Morning: Silence, Affirmations, Visualization, Scribing: 5 minutes each; Exercise, Reading: 20 minutes each.
     
-* The sequence in which you do them can also be customized to your preference. ☺ ***Best order for me***\*: Silence - Affirmations - Visualization - Exercise - Reading - Scribing\*
+* The sequence in which you do them can also be customized to your preference. ☺ ***Best order for me***: Silence - Affirmations - Visualization - Exercise - Reading - Scribing
     
 
 Some other good quotes from the book:

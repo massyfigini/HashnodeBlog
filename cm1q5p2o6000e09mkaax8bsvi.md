@@ -16,10 +16,8 @@ tags: self-improvement-1, self-help, self-help-books
     
 2. **Hydration**: Hydrate immediately upon waking, as dehydration can lead to fatigue. Drinking water first thing in the morning helps boost energy levels.
     
-3. **Morning exercise**: Dress in your exercise clothes right after waking up to encourage morning exercise. Morning exercise is vital as it elevates your mental, physical, and emotional state, setting a positive tone for the day.
-    
-4. **Personal development**: Prioritize and consistently dedicate time each day to personal development to maximize your potential.
-    
+
+First thing each morning do the SAVERS: Silence, Affirmations, Visualization, Exercise, Reading, Scribing.
 
 ### S is for Silence
 
@@ -42,7 +40,7 @@ tags: self-improvement-1, self-help, self-help-books
     
 * **Creating your affirmations**: Clarify what you truly want in each area of your life and why it's important to you. Identify who you need to become and which specific actions you need to take to make your vision a reality. Be specific, including the frequency, quantity, and timeframes of the actions.
     
-* **Incorporating inspiration**: Add quotes, philosophies, or strategies that inspire you to your affirmations to integrate them into your mindset and behavior.
+    Add quotes, philosophies, or strategies that inspire you to your affirmations to integrate them into your mindset and behavior.
     
 * **Writing and repeating affirmations**: Putting affirmations in writing helps you to move towards a desired mindset. Consistent repetition leads to acceptance by the subconscious mind, which changes thoughts, beliefs, and behaviors over time.
     
@@ -72,7 +70,7 @@ tags: self-improvement-1, self-help, self-help-books
 
 Morning exercise helps wake you up, enhances mental clarity, and sustains higher energy levels throughout the day.
 
-**☺** ***My preference***\*: Yoga at home when it's cold or rainy, and biking outside when the weather is nice.\*
+**☺** ***My preference***: Yoga at home when it's cold or rainy, and biking outside when the weather is nice.
 
 ### R is for Reading
 
@@ -80,16 +78,13 @@ The fastest way to achieve your goals is to learn from those who have already su
 
 ### S is for Scribing
 
-* **Documenting your journey**: Scribing (journaling) allows you to capture insights, ideas, successes, lessons, and areas for personal growth or improvement.
-    
-* **Daily reflection**: Journaling each day helps you focus on what you learned, what you accomplished, what you're grateful for, and what you are committed to improving for tomorrow.
-    
+Scribing (journaling) allows you to capture insights, ideas, successes, lessons, and areas for personal growth or improvement. Journaling each day helps you focus on what you learned, what you accomplished, what you're grateful for, and what you are committed to improving for tomorrow.
 
 ### Conclusion
 
 * You must customize your life savers based on your needs.
     
-* Example schedule for 60 minutes of Miracle Morning: Silence, Affirmations, Visualization, Scribing: 5 minutes each; Exercise, Reading: 20 minutes each.
+* Example schedule for 60 minutes of Miracle Morning: Silence, Affirmations, Visualization, Scribing: 5 minutes each; Exercise, Reading: 20 minutes each. But you can do even 1-2 minutes for each activity if or when you have no time.
     
 * The sequence in which you do them can also be customized to your preference. ☺ ***Best order for me***: Silence - Affirmations - Visualization - Exercise - Scribing - Reading
     
@@ -112,7 +107,7 @@ Some other good quotes from the book:
     
 * Always remember that who you are becoming is far more important than what you are doing, and yet it is what you are doing that is determining who you are becoming.
     
-* We spend to much time thinking about the actions we should be taking to create the results that we want, but then we don't take those actions. We all know what we need to do we just don't consistently do what we know.
+* We spend too much time thinking about the actions we should be taking to create the results that we want, but then we don't take those actions. We all know what we need to do we just don't consistently do what we know.
     
 
 ☺ *My rating:* ★★★★☆

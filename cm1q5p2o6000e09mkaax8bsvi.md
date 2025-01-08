@@ -86,7 +86,7 @@ Scribing (journaling) allows you to capture insights, ideas, successes, lessons,
     
 * Example schedule for 60 minutes of Miracle Morning: Silence, Affirmations, Visualization, Scribing: 5 minutes each; Exercise, Reading: 20 minutes each. But you can do even 1-2 minutes for each activity if or when you have no time.
     
-* The sequence in which you do them can also be customized to your preference. ☺ ***Best order for me***: Silence - Affirmations - Visualization - Exercise - Scribing - Reading
+* The sequence in which you do them can also be customized to your preference. ☺ ***Best order for me***: Silence - Affirmations - Visualization - Scribing - Exercise - Reading
     
 
 Some other good quotes from the book:

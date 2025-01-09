@@ -78,7 +78,7 @@ The fastest way to achieve your goals is to learn from those who have already su
 
 ### S is for Scribing
 
-Scribing (journaling) allows you to capture insights, ideas, successes, lessons, and areas for personal growth or improvement. Journaling each day helps you focus on what you learned, what you accomplished, what you're grateful for, and what you are committed to improving for tomorrow.
+Scribing (journaling) allows you to capture insights, ideas, successes, lessons, and areas for personal growth or improvement. Journaling each day helps you focus on what you learned, what you accomplished, what you're grateful for, and what you are committed to improving for tomorrow. Also periodically reviewing your entries help you to learn useful lessons and establish new commitments.
 
 ### Conclusion
 

@@ -110,8 +110,6 @@ Some other good quotes from the book:
 * We spend too much time thinking about the actions we should be taking to create the results that we want, but then we don't take those actions. We all know what we need to do we just don't consistently do what we know.
     
 
-### *☺ My Review*
-
-*(2025-01-10 update) I consider this a good introductory book about the six practices, the SAVERS. However, when I read this book, I already knew these practices from other self-help books, so it didn’t give me much new insight (for example, Unlimited Power by Tony Robbins explores all of them in much greater depth). But the simple idea of practicing all the SAVERS every morning as the first thing of the day is proving to be life-changing for me, and for this reason, I’m grateful to the author, Hal Elrod. Also, the author’s life story shared in the book is truly inspiring - it’s worth reading the book for this reason alone, though there’s more to gain from it.*
+***☺ My Review:*** *(2025-01-10 update) I consider this a good introductory book about the six practices, the SAVERS. However, when I read this book, I already knew these practices from other self-help books, so it didn’t give me much new insight (for example, Unlimited Power by Tony Robbins explores all of them in much greater depth). But the simple idea of practicing all the SAVERS every morning as the first thing of the day is proving to be life-changing for me, and for this reason, I’m grateful to the author, Hal Elrod. Also, the author’s life story shared in the book is truly inspiring - it’s worth reading the book for this reason alone, though there’s more to gain from it.*
 
 ☺ *My rating:* ★★★★☆

@@ -10,6 +10,8 @@ tags: presentations, self-improvement-1, self-help, self-help-books
 
 *These are just my personal notes about the book "The Presentation Secrets of Steve Jobs: How to be insanely great in front of any audience" by Carmine Gallo. Things that are important to me may not be as significant to you, and vice versa. If you are interested in the book, you can buy your copy* [***here***](https://www.amazon.com/Presentation-Secrets-Steve-Jobs-Insanely/dp/125983588X/ref=tmm_pap_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.r8dlJrJEoqlZ1-PT9pXH_bOFWvg3T_mISRbJqpxoeYHCe7X0BWjY5RnTrNWE8xbd4f7UtF0rw0FZptupfllp2sQrenh7cqiiHg5u13rKlULdVdi3m8EGvRgb_Hm5BChmlliwn1WwCmT6FbPe-Yx_LWkuHlslESE0jyJOJ5C_xcpR0PgrlBbmdkLhMG2zMfPMZNCKE3MQa7h7PSCGIoa_pHsNi1PFi7gcUf3TXnZPN04.BO6hXovdOfeLHZ79dUzC0crcdGh7wk3mIDrPQGzr9e8&qid=1731307356&sr=1-1)*.*
 
+*2024 UPDATE: I used AI (ChatGPT by OpenAI) to improve grammar, structure, and readability to the notes.*
+
 ## Create the story
 
 ### 1\. Plan in analog
